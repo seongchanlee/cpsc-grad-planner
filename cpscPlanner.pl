@@ -2,16 +2,19 @@
 graduated(Transcript, Unused) :-
     complete(Transcript, _, _, _).
 
-%% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101], CS).
+%% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101, cpsc210, cpsc213, cpsc221, math200, math221], CS, _, _).
 complete(Transcript, CSDegreeRequirements, ArtsRequirements, Misc):-
     cs_requirements(Transcript, Result),
     check_difference(Transcript, CSDegreeRequirements, Result).
 %% add arts and misc here
 
+
+%%                  CS REQUIREMENTS
+%% --------------------------------------------------------------------------------
 cs_requirements(Transcript, Result):-
     first_year_cs_requirements(Transcript, R1),
     second_year_cs_requirements(R1, Result).
- %%   thirdfourth_year_cs_requirements(R2, Result). 
+%%    thirdfourth_year_cs_requirements(R2, Result). 
 
 first_year_cs_requirements(Transcript, Result) :-
     remove_from_transcript(Transcript, [cpsc110, cpsc121], R1),
@@ -23,6 +26,25 @@ second_year_cs_requirements(Transcript, Result) :-
     second_year_math(R1, R2),
     second_year_math(R2, Result).
 
+/*
+thirdfourth_year_cs_requirements(Transcript, Result) :-
+    remove_from_transcript(Transcript, [cpsc310, cpsc313, cpsc320], R1),
+    threehunnid_level_CPSC(R1, ToBeRemoved),
+    proper_length(ToBeRemoved, X),
+    X>1,
+    take(2, ToBeRemoved, Firsttwo),
+    subtract(Transcript, Firsttwo, Result).
+
+threehunnid_level_CPSC([H|R], ToBeRemoved) :-
+    prop(H, number, CourseNumber),
+    CourseNumber >= 300,
+    CourseNumber < 400,
+    append(, [H], ToBeRemoved),
+    threehunnid_level_CPSC(R, ToBeRemoved).
+*/
+
+%%                  HELPER FUNCTIONS
+%% -----------------------------------------------------------------------------------
 remove_from_transcript(Transcript, [], Transcript).
 remove_from_transcript(Transcript, [H|T], Result) :-
     select(H, Transcript, R),
@@ -48,10 +70,10 @@ first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math105],
 first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math121], R).
 
 %% --- Second year Math
-second_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math200], R).
-second_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math221], R).
-second_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [stat200], R).
-second_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [stat241], R).
+second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math200], R).
+second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math221], R).
+second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat200], R).
+second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241], R).
 %% 						COURSE DECLARATIONS
 %% ----------------------------------------------------------------
 
