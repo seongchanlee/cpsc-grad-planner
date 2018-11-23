@@ -15,7 +15,7 @@ complete(Transcript, CSDegreeRequirements, ArtsRequirements, Misc):-
 cs_requirements(Transcript, Result):-
     first_year_cs_requirements(Transcript, Res1),
     second_year_cs_requirements(Res1, Res2),
-    thirdfourth_year_cs_requirements(Res2, Result). 
+    thirdfourth_year_cs_requirements(Res2, Result).
 
 first_year_cs_requirements(Transcript, Result) :-
     remove_from_transcript(Transcript, [cpsc110, cpsc121], Res1),
@@ -75,7 +75,7 @@ check_difference(Transcript, Result, Difference):-
     subtract(Transcript, Difference, Result).
 
 
-%% --- First year Math.. Any of these count as first year math. There are 2 requirements for this. 
+%% --- First year Math.. Any of these count as first year math. There are 2 requirements for this.
 first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math100], R).
 first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math102], R).
 first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math104], R).
@@ -181,63 +181,63 @@ prop(cpsc121,department,cpsc).
 % CPSC 200 levels
 
 prop(cpsc210, number, 210).
-prop(cpsc210, department, cpsc). 
+prop(cpsc210, department, cpsc).
 
 prop(cpsc213, number, 213).
-prop(cpsc213, department, cpsc). 
+prop(cpsc213, department, cpsc).
 
 prop(cpsc221, number, 221).
-prop(cpsc221, department, cpsc). 
+prop(cpsc221, department, cpsc).
 
 
 % CPSC 300 levels
 prop(cpsc301, number, 301).
-prop(cpsc301, department, cpsc). 
+prop(cpsc301, department, cpsc).
 
 prop(cpsc302, number, 302).
-prop(cpsc302, department, cpsc). 
+prop(cpsc302, department, cpsc).
 
 prop(cpsc303, number, 303).
-prop(cpsc303, department, cpsc). 
+prop(cpsc303, department, cpsc).
 
 prop(cpsc304, number, 304).
-prop(cpsc304, department, cpsc). 
+prop(cpsc304, department, cpsc).
 
 prop(cpsc310, number, 310).
-prop(cpsc310, department, cpsc). 
+prop(cpsc310, department, cpsc).
 
 prop(cpsc311, number, 311).
-prop(cpsc311, department, cpsc). 
+prop(cpsc311, department, cpsc).
 
 prop(cpsc312, number, 312).
-prop(cpsc312, department, cpsc). 
+prop(cpsc312, department, cpsc).
 
 prop(cpsc313, number, 313).
-prop(cpsc313, department, cpsc). 
+prop(cpsc313, department, cpsc).
 
 prop(cpsc314, number, 314).
-prop(cpsc314, department, cpsc). 
+prop(cpsc314, department, cpsc).
 
 prop(cpsc317, number, 317).
-prop(cpsc317, department, cpsc). 
+prop(cpsc317, department, cpsc).
 
 prop(cpsc319, number, 319).
-prop(cpsc319, department, cpsc). 
+prop(cpsc319, department, cpsc).
 
 prop(cpsc320, number, 320).
-prop(cpsc320, department, cpsc). 
+prop(cpsc320, department, cpsc).
 
 prop(cpsc322, number, 322).
-prop(cpsc322, department, cpsc). 
+prop(cpsc322, department, cpsc).
 
 prop(cpsc340, number, 340).
-prop(cpsc340, department, cpsc). 
+prop(cpsc340, department, cpsc).
 
 prop(cpsc344, number, 344).
-prop(cpsc344, department, cpsc). 
+prop(cpsc344, department, cpsc).
 
 prop(cpsc349, number, 349).
-prop(cpsc349, department, cpsc). 
+prop(cpsc349, department, cpsc).
 
 
 % CPSC 400 levels
@@ -588,5 +588,487 @@ prop(asia408, department, asia)
 prop(asia402, number, 402)
 prop(asia402, department, asia)
 
+%% LITERATURE REQUIREMENTS
 
+prop(afst351, number, 351).
+prop(afst351, department, afst).
 
+prop(arbc400, number, 400).
+prop(arbc400, department, arbc).
+
+prop(arbc420, number, 420).
+prop(arbc420, department, arbc).
+
+prop(asia212, number, 212).
+prop(asia212, department, asia).
+
+prop(asia213, number, 213).
+prop(asia213, department, asia).
+
+prop(asia254, number, 254).
+prop(asia254, department, asia).
+
+prop(asia308, number, 308).
+prop(asia308, department, asia).
+
+prop(asia324, number, 324).
+prop(asia324, department, asia).
+
+prop(asia326, number, 326).
+prop(asia326, department, asia).
+
+prop(asia334, number, 334).
+prop(asia334, department, asia).
+
+prop(asia341, number, 341).
+prop(asia341, department, asia).
+
+prop(asia342, number, 342).
+prop(asia342, department, asia).
+
+prop(asia347, number, 347).
+prop(asia347, department, asia).
+
+prop(astu100, number, 100).
+prop(astu100, department, astu).
+
+prop(cens202, number, 202).
+prop(cens202, department, cens).
+
+prop(cens303, number, 303).
+prop(cens303, department, cens).
+
+prop(cens307, number, 307).
+prop(cens307, department, cens).
+
+prop(chin411, number, 411).
+prop(chin411, department, chin).
+
+prop(chin413, number, 413).
+prop(chin413, department, chin).
+
+prop(chin421, number, 421).
+prop(chin421, department, chin).
+
+prop(chin431, number, 431).
+prop(chin431, department, chin).
+
+prop(chin433, number, 433).
+prop(chin433, department, chin).
+
+prop(chin434, number, 434).
+prop(chin434, department, chin).
+
+prop(chin451, number, 451).
+prop(chin451, department, chin).
+
+prop(chin453, number, 453).
+prop(chin453, department, chin).
+
+prop(chin455, number, 455).
+prop(chin455, department, chin).
+
+prop(chin457, number, 457).
+prop(chin457, department, chin).
+
+prop(clst310, number, 310).
+prop(clst310, department, clst).
+
+prop(clst313, number, 313).
+prop(clst313, department, clst).
+
+prop(clst314, number, 314).
+prop(clst314, department, clst).
+
+prop(clst315, number, 315).
+prop(clst315, department, clst).
+
+prop(clst317, number, 317).
+prop(clst317, department, clst).
+
+prop(clst318, number, 318).
+prop(clst318, department, clst).
+
+prop(clst402, number, 402).
+prop(clst402, department, clst).
+
+prop(fnis454, number, 454).
+prop(fnis454, department, fnis).
+
+prop(fren220, number, 220).
+prop(fren220, department, fren).
+
+prop(fren221, number, 221).
+prop(fren221, department, fren).
+
+prop(fren280, number, 280).
+prop(fren280, department, fren).
+
+prop(fren320, number, 320).
+prop(fren320, department, fren).
+
+prop(fren321, number, 321).
+prop(fren321, department, fren).
+
+prop(fren328, number, 328).
+prop(fren328, department, fren).
+
+prop(fren329, number, 329).
+prop(fren329, department, fren).
+
+prop(fren330, number, 330).
+prop(fren330, department, fren).
+
+prop(fren348, number, 348).
+prop(fren348, department, fren).
+
+prop(fren349, number, 349).
+prop(fren349, department, fren).
+
+prop(fhis333, number, 333).
+prop(fhis333, department, fhis).
+
+prop(grsj224, number, 224).
+prop(grsj224, department, grsj).
+
+prop(germ301, number, 301).
+prop(germ301, department, germ).
+
+prop(germ302, number, 302).
+prop(germ302, department, germ).
+
+prop(germ303, number, 303).
+prop(germ303, department, germ).
+
+prop(germ304, number, 304).
+prop(germ304, department, germ).
+
+prop(germ305, number, 305).
+prop(germ305, department, germ).
+
+prop(germ360, number, 360).
+prop(germ360, department, germ).
+
+prop(germ370, number, 370).
+prop(germ370, department, germ).
+
+prop(germ380, number, 380).
+prop(germ380, department, germ).
+
+prop(germ390, number, 390).
+prop(germ390, department, germ).
+
+prop(germ401, number, 401).
+prop(germ401, department, germ).
+
+prop(grek301, number, 301).
+prop(grek301, department, grek).
+
+prop(grek351, number, 351).
+prop(grek351, department, grek).
+
+prop(grek352, number, 352).
+prop(grek352, department, grek).
+
+prop(grek401, number, 401).
+prop(grek401, department, grek).
+
+prop(grek402, number, 402).
+prop(grek402, department, grek).
+
+prop(hebr479, number, 479).
+prop(hebr479, department, hebr).
+
+prop(hinu400, number, 400).
+prop(hinu400, department, hinu).
+
+prop(ital303, number, 303).
+prop(ital303, department, ital).
+
+prop(ital304, number, 304).
+prop(ital304, department, ital).
+
+prop(ital403, number, 403).
+prop(ital403, department, ital).
+
+prop(ital404, number, 404).
+prop(ital404, department, ital).
+
+prop(ital405, number, 405).
+prop(ital405, department, ital).
+
+prop(ital406, number, 406).
+prop(ital406, department, ital).
+
+prop(ital407, number, 407).
+prop(ital407, department, ital).
+
+prop(ital408, number, 408).
+prop(ital408, department, ital).
+
+prop(ital409, number, 409).
+prop(ital409, department, ital).
+
+prop(ital420, number, 420).
+prop(ital420, department, ital).
+
+prop(itst231, number, 231).
+prop(itst231, department, itst).
+
+prop(itst232, number, 232).
+prop(itst232, department, itst).
+
+prop(itst333, number, 333).
+prop(itst333, department, itst).
+
+prop(itst345, number, 345).
+prop(itst345, department, itst).
+
+prop(itst385, number, 385).
+prop(itst385, department, itst).
+
+prop(itst413, number, 413).
+prop(itst413, department, itst).
+
+prop(itst414, number, 414).
+prop(itst414, department, itst).
+
+prop(itst415, number, 415).
+prop(itst415, department, itst).
+
+prop(itst416, number, 416).
+prop(itst416, department, itst).
+
+prop(itst417, number, 417).
+prop(itst417, department, itst).
+
+prop(japn311, number, 311).
+prop(japn311, department, japn).
+
+prop(japn312, number, 312).
+prop(japn312, department, japn).
+
+prop(japn342, number, 342).
+prop(japn342, department, japn).
+
+prop(japn406, number, 406).
+prop(japn406, department, japn).
+
+prop(japn408, number, 408).
+prop(japn408, department, japn).
+
+prop(japn422, number, 422).
+prop(japn422, department, japn).
+
+prop(japn423, number, 423).
+prop(japn423, department, japn).
+
+prop(japn452, number, 452).
+prop(japn452, department, japn).
+
+prop(japn453, number, 453).
+prop(japn453, department, japn).
+
+prop(korn410, number, 410).
+prop(korn410, department, korn).
+
+prop(latn301, number, 301).
+prop(latn301, department, latn).
+
+prop(latn350, number, 350).
+prop(latn350, department, latn).
+
+prop(latn351, number, 351).
+prop(latn351, department, latn).
+
+prop(latn401, number, 401).
+prop(latn401, department, latn).
+
+prop(latn402, number, 402).
+prop(latn402, department, latn).
+
+prop(mdvl301, number, 301).
+prop(mdvl301, department, mdvl).
+
+prop(mdvl302, number, 302).
+prop(mdvl302, department, mdvl).
+
+prop(phil375, number, 375).
+prop(phil375, department, phil).
+
+prop(pols345, number, 345).
+prop(pols345, department, pols).
+
+prop(pols424, number, 424).
+prop(pols424, department, pols).
+
+prop(pols426, number, 426).
+prop(pols426, department, pols).
+
+prop(port392, number, 392).
+prop(port392, department, port).
+
+prop(port405, number, 405).
+prop(port405, department, port).
+
+prop(punj300, number, 300).
+prop(punj300, department, punj).
+
+prop(punj400, number, 400).
+prop(punj400, department, punj).
+
+prop(punj401, number, 401).
+prop(punj401, department, punj).
+
+prop(punj402, number, 402).
+prop(punj402, department, punj).
+
+prop(punj403, number, 403).
+prop(punj403, department, punj).
+
+prop(punj404, number, 404).
+prop(punj404, department, punj).
+
+prop(relg201, number, 201).
+prop(relg201, department, relg).
+
+prop(relg203, number, 203).
+prop(relg203, department, relg).
+
+prop(relg209, number, 209).
+prop(relg209, department, relg).
+
+prop(relg307, number, 307).
+prop(relg307, department, relg).
+
+prop(relg311, number, 311).
+prop(relg311, department, relg).
+
+prop(relg320, number, 320).
+prop(relg320, department, relg).
+
+prop(relg321, number, 321).
+prop(relg321, department, relg).
+
+prop(rmst221, number, 221).
+prop(rmst221, department, rmst).
+
+prop(rmst222, number, 222).
+prop(rmst222, department, rmst).
+
+prop(rmst420, number, 420).
+prop(rmst420, department, rmst).
+
+prop(russ206, number, 206).
+prop(russ206, department, russ).
+
+prop(russ207, number, 207).
+prop(russ207, department, russ).
+
+prop(russ305, number, 305).
+prop(russ305, department, russ).
+
+prop(russ306, number, 306).
+prop(russ306, department, russ).
+
+prop(russ321, number, 321).
+prop(russ321, department, russ).
+
+prop(russ407, number, 407).
+prop(russ407, department, russ).
+
+prop(russ408, number, 408).
+prop(russ408, department, russ).
+
+prop(russ409, number, 409).
+prop(russ409, department, russ).
+
+prop(russ410, number, 410).
+prop(russ410, department, russ).
+
+prop(russ411, number, 411).
+prop(russ411, department, russ).
+
+prop(sans300, number, 300).
+prop(sans300, department, sans).
+
+prop(sans450, number, 450).
+prop(sans450, department, sans).
+
+prop(scan333, number, 333).
+prop(scan333, department, scan).
+
+prop(scan334, number, 334).
+prop(scan334, department, scan).
+
+prop(scan335, number, 335).
+prop(scan335, department, scan).
+
+prop(scan336, number, 336).
+prop(scan336, department, scan).
+
+prop(scan411, number, 411).
+prop(scan411, department, scan).
+
+prop(scan412, number, 412).
+prop(scan412, department, scan).
+
+prop(scan413, number, 413).
+prop(scan413, department, scan).
+
+prop(scan414, number, 414).
+prop(scan414, department, scan).
+
+prop(scan415, number, 415).
+prop(scan415, department, scan).
+
+prop(slav307, number, 307).
+prop(slav307, department, slav).
+
+prop(span221, number, 221).
+prop(span221, department, span).
+
+prop(span222, number, 222).
+prop(span222, department, span).
+
+prop(span280, number, 280).
+prop(span280, department, span).
+
+prop(span312, number, 312).
+prop(span312, department, span).
+
+prop(span357, number, 357).
+prop(span357, department, span).
+
+prop(span358, number, 358).
+prop(span358, department, span).
+
+prop(span364, number, 364).
+prop(span364, department, span).
+
+prop(span365, number, 365).
+prop(span365, department, span).
+
+prop(span406, number, 406).
+prop(span406, department, span).
+
+prop(span410, number, 410).
+prop(span410, department, span).
+
+prop(thtr210, number, 210).
+prop(thtr210, department, thtr).
+
+prop(thtr211, number, 211).
+prop(thtr211, department, thtr).
+
+prop(thtr245, number, 245).
+prop(thtr245, department, thtr).
+
+prop(thtr310, number, 310).
+prop(thtr310, department, thtr).
+
+prop(thtr310, number, 310).
+prop(thtr310, department, thtr).
+
+prop(thtr310, number, 310).
+prop(thtr310, department, thtr).
