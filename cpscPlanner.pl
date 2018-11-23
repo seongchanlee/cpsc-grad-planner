@@ -513,8 +513,8 @@ prop(anth478, department, anth).
 prop(arcl306, number, 306).
 prop(arcl306, department, arcl).
 
-prop(arcl405, number, 405)
-prop(arcl405, department, arcl)
+prop(arcl405, number, 405).
+prop(arcl405, department, arcl).
 
 prop(arcl406, number, 406).
 prop(arcl406, department, arcl).
