@@ -54,6 +54,15 @@ fourhunnid_level_CPSC(Transcript, Course, Result) :-
     select(Course, Transcript, Result).
 
 
+%%                ARTS REQUIREMENTS
+%% ----------------------------------------------------------------------------------
+arts_requirements(Transcript, Result) :-
+    language_requirements(Transcript, R1).
+
+language_requirements(Transcript, Result) :-
+    lang_req(Transcript, Result).
+
+
 %%                  HELPER FUNCTIONS
 %% -----------------------------------------------------------------------------------
 remove_from_transcript(Transcript, [], Transcript).
@@ -85,6 +94,68 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math200],
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math221], R).
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat200], R).
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241], R).
+
+
+%% --- Meets Arts Language requirement
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [arbc400], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [arbc202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [asla400], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [cnto301], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [cnto311], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin117], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin118], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin243], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin244], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin107], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin108], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin233], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin234], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [dani210], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel212], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel222], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel232], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel242], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel252], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel262], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel292], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fren112], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [germ210], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [grek200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [grek202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hebr405], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hebr202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hinu200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hinu202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [indo200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [indo202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital203], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital206], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn103], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn151], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn201], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn260], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [korn200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [korn202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [latn200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [latn202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pers104], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pers201], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pols300], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [port202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [port210], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [punj200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [punj202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [russ200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans200], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans400], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans401], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span112], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span202], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [swed210], R).
+lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ukrn225], R).
 
 
 %% 						COURSE DECLARATIONS
@@ -407,7 +478,115 @@ prop(swed210, department, swed)
 prop(ukrn225, number, 225)
 prop(ukrn225, department, ukrn)
 
+%% RESEARCH REQUIREMENTS
 
+prop(anth317, number, 317)
+prop(anth317, department, anth)
+
+prop(anth407, number, 407)
+prop(anth407, department, anth)
+
+prop(anth408, number, 408)
+prop(anth408, department, anth)
+
+prop(anth417, number, 417)
+prop(anth417, department, anth)
+
+prop(anth418, number, 418)
+prop(anth418, department, anth)
+
+prop(anth428, number, 428)
+prop(anth428, department, anth)
+
+prop(anth431, number, 431)
+prop(anth431, department, anth)
+
+prop(anth449, number, 449)
+prop(anth449, department, anth)
+
+prop(anth452, number, 452)
+prop(anth452, department, anth)
+
+prop(anth478, number, 478)
+prop(anth478, department, anth)
+
+prop(arcl306, number, 306)
+prop(arcl306, department, arcl)
+
+prop(arcl405, number, 405)
+prop(arcl405, department, arcl)
+
+prop(arcl406, number, 406)
+prop(arcl406, department, arcl)
+
+prop(arcl419, number, 419)
+prop(arcl419, department, arcl)
+
+prop(arth410, number, 410)
+prop(arth410, department, arth)
+
+prop(arth432, number, 432)
+prop(arth432, department, arth)
+
+prop(arth436, number, 436)
+prop(arth436, department, arth)
+
+prop(arth437, number, 437)
+prop(arth437, department, arth)
+
+prop(arth439, number, 439)
+prop(arth439, department, arth)
+
+prop(arth440, number, 440)
+prop(arth440, department, arth)
+
+prop(arth442, number, 442)
+prop(arth442, department, arth)
+
+prop(arth443, number, arth443)
+prop(arth443, department, arth)
+
+prop(arth445, number, 445)
+prop(arth445, department, arth)
+
+prop(arth448, number, 448)
+prop(arth448, department, arth)
+
+prop(arth450, number, 450)
+prop(arth450, department, arth)
+
+prop(arth455, number, 455)
+prop(arth455, department, arth)
+
+prop(arth458, number, 458)
+prop(arth458, department, arth)
+
+prop(arth459, number, 459)
+prop(arth459, department, arth)
+
+prop(arth464, number, 464)
+prop(arth464, department, arth)
+
+prop(arth471, number, 471)
+prop(arth471, department, arth)
+
+prop(arth476, number, 476)
+prop(arth476, department, arth)
+
+prop(arth479, number, 479)
+prop(arth479, department, arth)
+
+prop(arth480, number, 480)
+prop(arth480, department, arth)
+
+prop(asia402, number, 402)
+prop(asia402, department, asia)
+
+prop(asia408, number, 408)
+prop(asia408, department, asia)
+
+prop(asia402, number, 402)
+prop(asia402, department, asia)
 
 
 
