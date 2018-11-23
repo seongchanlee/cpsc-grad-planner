@@ -221,3 +221,193 @@ prop(cpsc449,department,cpsc).
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
+
+
+%% ARTS COURSE DECLARATIONS
+
+%% LANGUAGE REQUIREMENTS
+
+prop(arbc400, number, 400)
+prop(arbc400, department, arbc)
+
+prop(arbc202, number, 202)
+prop(arbc202, department, arbc)
+
+prop(asla400, number, 400)
+prop(asla400, department, asla)
+
+prop(cnto301, number, 301)
+prop(cnto301, department, cnto)
+
+prop(cnto311, number, 311)
+prop(cnto311, department, cnto)
+
+prop(chin117, number, 117)
+prop(chin117, department, chin)
+
+prop(chin118, number, 117)
+prop(chin118, department, chin)
+
+prop(chin243, number, 243)
+prop(chin243, department, chin)
+
+prop(chin244, number, 244)
+prop(chin244, department, chin)
+
+prop(chin107, number, 107)
+prop(chin107, department, chin)
+
+prop(chin108, number, 108)
+prop(chin108, department, chin)
+
+prop(chin233, number, 233)
+prop(chin233, department, chin)
+
+prop(chin234, number, 234)
+prop(chin234, department, chin)
+
+prop(dani210, number, 210)
+prop(dani210, department, dani)
+
+prop(fnel202, number, 202)
+prop(fnel202, department, fnel)
+
+prop(fnel212, number, 212)
+prop(fnel212, department, fnel)
+
+prop(fnel222, number, 222)
+prop(fnel222, department, fnel)
+
+prop(fnel232, number, 232)
+prop(fnel232, department, fnel)
+
+prop(fnel242, number, 242)
+prop(fnel242, department, fnel)
+
+prop(fnel252, number, 252)
+prop(fnel252, department, fnel)
+
+prop(fnel262, number, 262)
+prop(fnel262, department, fnel)
+
+prop(fnel292, number, 292)
+prop(fnel292, department, fnel)
+
+prop(fren112, number, 112)
+prop(fren112, department, fren)
+
+prop(arbc202, number, 202)
+prop(arbc202, department, arbc)
+
+prop(germ210, number, 210)
+prop(germ210, department, germ)
+
+prop(grek200, number, 200)
+prop(grek200, department, grek)
+
+prop(grek202, number, 202)
+prop(grek202, department, grek)
+
+prop(hebr405, number, 405)
+prop(hebr405, department, hebr)
+
+prop(hebr202, number, 202)
+prop(hebr202, department, hebr)
+
+prop(hinu200, number, 200)
+prop(hinu200, department, hinu)
+
+prop(hinu202, number, 202)
+prop(hinu202, department, hinu)
+
+prop(indo200, number, 200)
+prop(indo200, department, indo)
+
+prop(indo202, number, 202)
+prop(indo202, department, indo)
+
+prop(ital202, number, 202)
+prop(ital202, department, ital)
+
+prop(ital203, number, 203)
+prop(ital203, department, ital)
+
+prop(ital206, number, 206)
+prop(ital206, department, ital)
+
+prop(japn103, number, 103)
+prop(japn103, department, japn)
+
+prop(japn151, number, 151)
+prop(japn151, department, japn)
+
+prop(japn201, number, 201)
+prop(japn201, department, japn)
+
+prop(japn260, number, 260)
+prop(japn260, department, japn)
+
+prop(korn200, number, 200)
+prop(korn200, department, korn)
+
+prop(korn202, number, 202)
+prop(korn202, department, korn)
+
+prop(latn200, number, 200)
+prop(latn200, department, latn)
+
+prop(latn202, number, 202)
+prop(latn202, department, latn)
+
+prop(pers104, number, 104)
+prop(pers104, department, pers)
+
+prop(pers201, number, 201)
+prop(pers201, department, pers)
+
+prop(pols300, number, 300)
+prop(pols300, department, pols)
+
+prop(port202, number, 202)
+prop(port202, department, port)
+
+prop(port210, number, 210)
+prop(port210, department, port)
+
+prop(punj200, number, 200)
+prop(punj200, department, punj)
+
+prop(punj202, number, 202)
+prop(punj202, department, punj)
+
+prop(russ200, number, 200)
+prop(russ200, department, russ)
+
+prop(sans200, number, 200)
+prop(sans200, department, sans)
+
+prop(sans202, number, 202)
+prop(sans202, department, sans)
+
+prop(sans400, number, 400)
+prop(sans400, department, sans)
+
+prop(sans401, number, 401)
+prop(sans401, department, sans)
+
+prop(span112, number, 112)
+prop(span112, department, span)
+
+prop(span202, number, 202)
+prop(span202, department, span)
+
+prop(swed210, number, 210)
+prop(swed210, department, swed)
+
+prop(ukrn225, number, 225)
+prop(ukrn225, department, ukrn)
+
+
+
+
+
