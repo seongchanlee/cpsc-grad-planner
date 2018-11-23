@@ -298,295 +298,295 @@ prop(cpsc490,department,cpsc).
 
 %% LANGUAGE REQUIREMENTS
 
-prop(arbc400, number, 400)
-prop(arbc400, department, arbc)
+prop(arbc400, number, 400).
+prop(arbc400, department, arbc).
 
-prop(arbc202, number, 202)
-prop(arbc202, department, arbc)
+prop(arbc202, number, 202).
+prop(arbc202, department, arbc).
 
-prop(asla400, number, 400)
-prop(asla400, department, asla)
+prop(asla400, number, 400).
+prop(asla400, department, asla).
 
-prop(cnto301, number, 301)
-prop(cnto301, department, cnto)
+prop(cnto301, number, 301).
+prop(cnto301, department, cnto).
 
-prop(cnto311, number, 311)
-prop(cnto311, department, cnto)
+prop(cnto311, number, 311).
+prop(cnto311, department, cnto).
 
-prop(chin117, number, 117)
-prop(chin117, department, chin)
+prop(chin117, number, 117).
+prop(chin117, department, chin).
 
-prop(chin118, number, 117)
-prop(chin118, department, chin)
+prop(chin118, number, 117).
+prop(chin118, department, chin).
 
-prop(chin243, number, 243)
-prop(chin243, department, chin)
+prop(chin243, number, 243).
+prop(chin243, department, chin).
 
-prop(chin244, number, 244)
-prop(chin244, department, chin)
+prop(chin244, number, 244).
+prop(chin244, department, chin).
 
-prop(chin107, number, 107)
-prop(chin107, department, chin)
+prop(chin107, number, 107).
+prop(chin107, department, chin).
 
-prop(chin108, number, 108)
-prop(chin108, department, chin)
+prop(chin108, number, 108).
+prop(chin108, department, chin).
 
-prop(chin233, number, 233)
-prop(chin233, department, chin)
+prop(chin233, number, 233).
+prop(chin233, department, chin).
 
-prop(chin234, number, 234)
-prop(chin234, department, chin)
+prop(chin234, number, 234).
+prop(chin234, department, chin).
 
-prop(dani210, number, 210)
-prop(dani210, department, dani)
+prop(dani210, number, 210).
+prop(dani210, department, dani).
 
-prop(fnel202, number, 202)
-prop(fnel202, department, fnel)
+prop(fnel202, number, 202).
+prop(fnel202, department, fnel).
 
-prop(fnel212, number, 212)
-prop(fnel212, department, fnel)
+prop(fnel212, number, 212).
+prop(fnel212, department, fnel).
 
-prop(fnel222, number, 222)
-prop(fnel222, department, fnel)
+prop(fnel222, number, 222).
+prop(fnel222, department, fnel).
 
-prop(fnel232, number, 232)
-prop(fnel232, department, fnel)
+prop(fnel232, number, 232).
+prop(fnel232, department, fnel).
 
-prop(fnel242, number, 242)
-prop(fnel242, department, fnel)
+prop(fnel242, number, 242).
+prop(fnel242, department, fnel).
 
-prop(fnel252, number, 252)
-prop(fnel252, department, fnel)
+prop(fnel252, number, 252).
+prop(fnel252, department, fnel).
 
-prop(fnel262, number, 262)
-prop(fnel262, department, fnel)
+prop(fnel262, number, 262).
+prop(fnel262, department, fnel).
 
-prop(fnel292, number, 292)
-prop(fnel292, department, fnel)
+prop(fnel292, number, 292).
+prop(fnel292, department, fnel).
 
-prop(fren112, number, 112)
-prop(fren112, department, fren)
+prop(fren112, number, 112).
+prop(fren112, department, fren).
 
-prop(arbc202, number, 202)
-prop(arbc202, department, arbc)
+prop(arbc202, number, 202).
+prop(arbc202, department, arbc).
 
-prop(germ210, number, 210)
-prop(germ210, department, germ)
+prop(germ210, number, 210).
+prop(germ210, department, germ).
 
-prop(grek200, number, 200)
-prop(grek200, department, grek)
+prop(grek200, number, 200).
+prop(grek200, department, grek).
 
-prop(grek202, number, 202)
-prop(grek202, department, grek)
+prop(grek202, number, 202).
+prop(grek202, department, grek).
 
-prop(hebr405, number, 405)
-prop(hebr405, department, hebr)
+prop(hebr405, number, 405).
+prop(hebr405, department, hebr).
 
-prop(hebr202, number, 202)
-prop(hebr202, department, hebr)
+prop(hebr202, number, 202).
+prop(hebr202, department, hebr).
 
-prop(hinu200, number, 200)
-prop(hinu200, department, hinu)
+prop(hinu200, number, 200).
+prop(hinu200, department, hinu).
 
-prop(hinu202, number, 202)
-prop(hinu202, department, hinu)
+prop(hinu202, number, 202).
+prop(hinu202, department, hinu).
 
-prop(indo200, number, 200)
-prop(indo200, department, indo)
+prop(indo200, number, 200).
+prop(indo200, department, indo).
 
-prop(indo202, number, 202)
-prop(indo202, department, indo)
+prop(indo202, number, 202).
+prop(indo202, department, indo).
 
-prop(ital202, number, 202)
-prop(ital202, department, ital)
+prop(ital202, number, 202).
+prop(ital202, department, ital).
 
-prop(ital203, number, 203)
-prop(ital203, department, ital)
+prop(ital203, number, 203).
+prop(ital203, department, ital).
 
-prop(ital206, number, 206)
-prop(ital206, department, ital)
+prop(ital206, number, 206).
+prop(ital206, department, ital).
 
-prop(japn103, number, 103)
-prop(japn103, department, japn)
+prop(japn103, number, 103).
+prop(japn103, department, japn).
 
-prop(japn151, number, 151)
-prop(japn151, department, japn)
+prop(japn151, number, 151).
+prop(japn151, department, japn).
 
-prop(japn201, number, 201)
-prop(japn201, department, japn)
+prop(japn201, number, 201).
+prop(japn201, department, japn).
 
-prop(japn260, number, 260)
-prop(japn260, department, japn)
+prop(japn260, number, 260).
+prop(japn260, department, japn).
 
-prop(korn200, number, 200)
-prop(korn200, department, korn)
+prop(korn200, number, 200).
+prop(korn200, department, korn).
 
-prop(korn202, number, 202)
-prop(korn202, department, korn)
+prop(korn202, number, 202).
+prop(korn202, department, korn).
 
-prop(latn200, number, 200)
-prop(latn200, department, latn)
+prop(latn200, number, 200).
+prop(latn200, department, latn).
 
-prop(latn202, number, 202)
-prop(latn202, department, latn)
+prop(latn202, number, 202).
+prop(latn202, department, latn).
 
-prop(pers104, number, 104)
-prop(pers104, department, pers)
+prop(pers104, number, 104).
+prop(pers104, department, pers).
 
-prop(pers201, number, 201)
-prop(pers201, department, pers)
+prop(pers201, number, 201).
+prop(pers201, department, pers).
 
-prop(pols300, number, 300)
-prop(pols300, department, pols)
+prop(pols300, number, 300).
+prop(pols300, department, pols).
 
-prop(port202, number, 202)
-prop(port202, department, port)
+prop(port202, number, 202).
+prop(port202, department, port).
 
-prop(port210, number, 210)
-prop(port210, department, port)
+prop(port210, number, 210).
+prop(port210, department, port).
 
-prop(punj200, number, 200)
-prop(punj200, department, punj)
+prop(punj200, number, 200).
+prop(punj200, department, punj).
 
-prop(punj202, number, 202)
-prop(punj202, department, punj)
+prop(punj202, number, 202).
+prop(punj202, department, punj).
 
-prop(russ200, number, 200)
-prop(russ200, department, russ)
+prop(russ200, number, 200).
+prop(russ200, department, russ).
 
-prop(sans200, number, 200)
-prop(sans200, department, sans)
+prop(sans200, number, 200).
+prop(sans200, department, sans).
 
-prop(sans202, number, 202)
-prop(sans202, department, sans)
+prop(sans202, number, 202).
+prop(sans202, department, sans).
 
-prop(sans400, number, 400)
-prop(sans400, department, sans)
+prop(sans400, number, 400).
+prop(sans400, department, sans).
 
-prop(sans401, number, 401)
-prop(sans401, department, sans)
+prop(sans401, number, 401).
+prop(sans401, department, sans).
 
-prop(span112, number, 112)
-prop(span112, department, span)
+prop(span112, number, 112).
+prop(span112, department, span).
 
-prop(span202, number, 202)
-prop(span202, department, span)
+prop(span202, number, 202).
+prop(span202, department, span).
 
-prop(swed210, number, 210)
-prop(swed210, department, swed)
+prop(swed210, number, 210).
+prop(swed210, department, swed).
 
-prop(ukrn225, number, 225)
-prop(ukrn225, department, ukrn)
+prop(ukrn225, number, 225).
+prop(ukrn225, department, ukrn).
 
 %% RESEARCH REQUIREMENTS
 
-prop(anth317, number, 317)
-prop(anth317, department, anth)
+prop(anth317, number, 317).
+prop(anth317, department, anth).
 
-prop(anth407, number, 407)
-prop(anth407, department, anth)
+prop(anth407, number, 407).
+prop(anth407, department, anth).
 
-prop(anth408, number, 408)
-prop(anth408, department, anth)
+prop(anth408, number, 408).
+prop(anth408, department, anth).
 
-prop(anth417, number, 417)
-prop(anth417, department, anth)
+prop(anth417, number, 417).
+prop(anth417, department, anth).
 
-prop(anth418, number, 418)
-prop(anth418, department, anth)
+prop(anth418, number, 418).
+prop(anth418, department, anth).
 
-prop(anth428, number, 428)
-prop(anth428, department, anth)
+prop(anth428, number, 428).
+prop(anth428, department, anth).
 
-prop(anth431, number, 431)
-prop(anth431, department, anth)
+prop(anth431, number, 431).
+prop(anth431, department, anth).
 
-prop(anth449, number, 449)
-prop(anth449, department, anth)
+prop(anth449, number, 449).
+prop(anth449, department, anth).
 
-prop(anth452, number, 452)
-prop(anth452, department, anth)
+prop(anth452, number, 452).
+prop(anth452, department, anth).
 
-prop(anth478, number, 478)
-prop(anth478, department, anth)
+prop(anth478, number, 478).
+prop(anth478, department, anth).
 
-prop(arcl306, number, 306)
-prop(arcl306, department, arcl)
+prop(arcl306, number, 306).
+prop(arcl306, department, arcl).
 
 prop(arcl405, number, 405)
 prop(arcl405, department, arcl)
 
-prop(arcl406, number, 406)
-prop(arcl406, department, arcl)
+prop(arcl406, number, 406).
+prop(arcl406, department, arcl).
 
-prop(arcl419, number, 419)
-prop(arcl419, department, arcl)
+prop(arcl419, number, 419).
+prop(arcl419, department, arcl).
 
-prop(arth410, number, 410)
-prop(arth410, department, arth)
+prop(arth410, number, 410).
+prop(arth410, department, arth).
 
-prop(arth432, number, 432)
-prop(arth432, department, arth)
+prop(arth432, number, 432).
+prop(arth432, department, arth).
 
-prop(arth436, number, 436)
-prop(arth436, department, arth)
+prop(arth436, number, 436).
+prop(arth436, department, arth).
 
-prop(arth437, number, 437)
-prop(arth437, department, arth)
+prop(arth437, number, 437).
+prop(arth437, department, arth).
 
-prop(arth439, number, 439)
-prop(arth439, department, arth)
+prop(arth439, number, 439).
+prop(arth439, department, arth).
 
-prop(arth440, number, 440)
-prop(arth440, department, arth)
+prop(arth440, number, 440).
+prop(arth440, department, arth).
 
-prop(arth442, number, 442)
-prop(arth442, department, arth)
+prop(arth442, number, 442).
+prop(arth442, department, arth).
 
-prop(arth443, number, arth443)
-prop(arth443, department, arth)
+prop(arth443, number, 443).
+prop(arth443, department, arth).
 
-prop(arth445, number, 445)
-prop(arth445, department, arth)
+prop(arth445, number, 445).
+prop(arth445, department, arth).
 
-prop(arth448, number, 448)
-prop(arth448, department, arth)
+prop(arth448, number, 448).
+prop(arth448, department, arth).
 
-prop(arth450, number, 450)
-prop(arth450, department, arth)
+prop(arth450, number, 450).
+prop(arth450, department, arth).
 
-prop(arth455, number, 455)
-prop(arth455, department, arth)
+prop(arth455, number, 455).
+prop(arth455, department, arth).
 
-prop(arth458, number, 458)
-prop(arth458, department, arth)
+prop(arth458, number, 458).
+prop(arth458, department, arth).
 
-prop(arth459, number, 459)
-prop(arth459, department, arth)
+prop(arth459, number, 459).
+prop(arth459, department, arth).
 
-prop(arth464, number, 464)
-prop(arth464, department, arth)
+prop(arth464, number, 464).
+prop(arth464, department, arth).
 
-prop(arth471, number, 471)
-prop(arth471, department, arth)
+prop(arth471, number, 471).
+prop(arth471, department, arth).
 
-prop(arth476, number, 476)
-prop(arth476, department, arth)
+prop(arth476, number, 476).
+prop(arth476, department, arth).
 
-prop(arth479, number, 479)
-prop(arth479, department, arth)
+prop(arth479, number, 479).
+prop(arth479, department, arth).
 
-prop(arth480, number, 480)
-prop(arth480, department, arth)
+prop(arth480, number, 480).
+prop(arth480, department, arth).
 
-prop(asia402, number, 402)
-prop(asia402, department, asia)
+prop(asia402, number, 402).
+prop(asia402, department, asia).
 
-prop(asia408, number, 408)
-prop(asia408, department, asia)
+prop(asia408, number, 408).
+prop(asia408, department, asia).
 
-prop(asia402, number, 402)
-prop(asia402, department, asia)
+prop(asia402, number, 402).
+prop(asia402, department, asia).
 
 %% LITERATURE REQUIREMENTS
 
