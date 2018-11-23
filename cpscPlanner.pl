@@ -59,7 +59,9 @@ fourhunnid_level_CPSC(Transcript, Course, Result) :-
 
 arts_requirements(Transcript, Result) :-
     prop(Course, requirement, lang),
-    select(Course, Transcript, Res1).
+    select(Course, Transcript, Res1),
+    prop(Course2, requirement, literature),
+    select(Course2, Res1, Res2),
 
 
 %%                  HELPER FUNCTIONS
