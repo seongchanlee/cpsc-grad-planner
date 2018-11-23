@@ -2,6 +2,7 @@
 graduated(Transcript, Unused) :-
     complete(Transcript, _, _, _).
 
+%%complete([cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc320, cpsc322, cpsc304, cpsc311, cpsc312, cpsc404, cpsc411, cpsc410], CS, _,_).
 %% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101, cpsc210, cpsc213, cpsc221, math200, math221], CS, _, _).
 complete(Transcript, CSDegreeRequirements, ArtsRequirements, Misc):-
     cs_requirements(Transcript, Result),
@@ -12,36 +13,46 @@ complete(Transcript, CSDegreeRequirements, ArtsRequirements, Misc):-
 %%                  CS REQUIREMENTS
 %% --------------------------------------------------------------------------------
 cs_requirements(Transcript, Result):-
-    first_year_cs_requirements(Transcript, R1),
-    second_year_cs_requirements(R1, Result).
-%%    thirdfourth_year_cs_requirements(R2, Result). 
+    first_year_cs_requirements(Transcript, Res1),
+    second_year_cs_requirements(Res1, Res2),
+    thirdfourth_year_cs_requirements(Res2, Result). 
 
 first_year_cs_requirements(Transcript, Result) :-
-    remove_from_transcript(Transcript, [cpsc110, cpsc121], R1),
-    first_year_math1(R1, R2),
-    first_year_math2(R2, Result).
+    remove_from_transcript(Transcript, [cpsc110, cpsc121], Res1),
+    first_year_math1(Res1, Res2),
+    first_year_math2(Res2, Result).
 
 second_year_cs_requirements(Transcript, Result) :-
-    remove_from_transcript(Transcript, [cpsc210, cpsc213, cpsc221], R1),
-    second_year_math(R1, R2),
-    second_year_math(R2, Result).
+    remove_from_transcript(Transcript, [cpsc210, cpsc213, cpsc221], Res1),
+    second_year_math(Res1, Res2),
+    second_year_math(Res2, Result).
 
-/*
 thirdfourth_year_cs_requirements(Transcript, Result) :-
-    remove_from_transcript(Transcript, [cpsc310, cpsc313, cpsc320], R1),
-    threehunnid_level_CPSC(R1, ToBeRemoved),
-    proper_length(ToBeRemoved, X),
-    X>1,
-    take(2, ToBeRemoved, Firsttwo),
-    subtract(Transcript, Firsttwo, Result).
+    remove_from_transcript(Transcript, [cpsc310, cpsc313, cpsc320], Res1),
+    %% 4, 300 level CPSC courses (12 Credits)
+    threehunnid_level_CPSC(Res1, _, Res2),
+    threehunnid_level_CPSC(Res2, _, Res3),
+    threehunnid_level_CPSC(Res3, _, Res4),
+    threehunnid_level_CPSC(Res4, _, Res5),
+    %% 3, 400 level CPSC courses (9 credits)
+    fourhunnid_level_CPSC(Res5, _, Res6),
+    fourhunnid_level_CPSC(Res6, _, Res7),
+    fourhunnid_level_CPSC(Res7, _, Result).
 
-threehunnid_level_CPSC([H|R], ToBeRemoved) :-
-    prop(H, number, CourseNumber),
+threehunnid_level_CPSC(Transcript, Course, Result) :-
+    prop(Course, number, CourseNumber),
+    prop(Course, department, cpsc),
     CourseNumber >= 300,
     CourseNumber < 400,
-    append(, [H], ToBeRemoved),
-    threehunnid_level_CPSC(R, ToBeRemoved).
-*/
+    select(Course, Transcript, Result).
+
+fourhunnid_level_CPSC(Transcript, Course, Result) :-
+    prop(Course, number, CourseNumber),
+    prop(Course, department, cpsc),
+    CourseNumber >= 400,
+    CourseNumber < 500,
+    select(Course, Transcript, Result).
+
 
 %%                  HELPER FUNCTIONS
 %% -----------------------------------------------------------------------------------
@@ -74,6 +85,8 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math200],
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [math221], R).
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat200], R).
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241], R).
+
+
 %% 						COURSE DECLARATIONS
 %% ----------------------------------------------------------------
 
