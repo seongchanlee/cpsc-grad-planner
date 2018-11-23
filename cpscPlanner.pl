@@ -2,13 +2,20 @@
 graduated(Transcript, Unused) :-
     complete(Transcript, _, _).
 
-%% try complete([cpsc110, cpsc121, cpsc200, cpsc310], CS).
-complete(Transcript, CS):-
-    first_year_cs_requirements(Transcript, Result),
-    check_difference(Transcript, CS, Result).
+%% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101], CS).
+complete(Transcript, CSDegreeRequirements):-
+    cs_requirements(Transcript, Result),
+    check_difference(Transcript, CSDegreeRequirements, Result).
+
+cs_requirements(Transcript, Result):-
+    first_year_cs_requirements(Transcript, Result).
+%%    second_year_cs_requirements(R1, R2),
+ %%   thirdfourth_year_cs_requirements(R2, Result).
 
 first_year_cs_requirements(Transcript, Result) :-
-    remove_from_transcript(Transcript, [cpsc110, cpsc121], Result).
+    remove_from_transcript(Transcript, [cpsc110, cpsc121], R1),
+    first_year_math1(R1, R2),
+    first_year_math2(R2, Result).
 
 remove_from_transcript(Transcript, [], Transcript).
 remove_from_transcript(Transcript, [H|T], Result) :-
@@ -20,8 +27,19 @@ check_difference(Transcript, Result, Difference):-
     subtract(Transcript, Difference, Result).
 
 
+%% --- First Year Math.. Any of these count as first year math. There are 2 requirements for this. 
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math100], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math102], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math104], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math180], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math184], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math120], R).
+first_year_math1(Transcript, R) :- remove_from_transcript(Transcript, [math110], R).
 
-
+first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math101], R).
+first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math103], R).
+first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math105], R).
+first_year_math2(Transcript, R) :- remove_from_transcript(Transcript, [math121], R).
 %% ----------------------------------------------------------------
 %% 						COURSE DECLARATIONS
 %% ----------------------------------------------------------------
