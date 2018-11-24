@@ -62,6 +62,8 @@ arts_requirements(Transcript, Result) :-
     select(Course, Transcript, Res1),
     prop(Course2, requirement, literature),
     select(Course2, Res1, Res2),
+    prop(Course3, requirement, literature),
+    select(Course3, Res2, Res3).
 
 
 %%                  HELPER FUNCTIONS
