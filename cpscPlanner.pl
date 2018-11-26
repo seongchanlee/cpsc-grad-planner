@@ -63,7 +63,9 @@ arts_requirements(Transcript, Result) :-
     prop(Course2, requirement, literature),
     select(Course2, Res1, Res2),
     prop(Course3, requirement, literature),
-    select(Course3, Res2, Res3).
+    select(Course3, Res2, Res3),
+    prop(Course4, requirement, research),
+    select(Course4, Res3, Result).
 
 
 %%                  HELPER FUNCTIONS
@@ -226,6 +228,7 @@ prop(cpsc317, department, cpsc).
 
 prop(cpsc319, number, 319).
 prop(cpsc319, department, cpsc).
+prop(cpsc319, requirement, research).
 
 prop(cpsc320, number, 320).
 prop(cpsc320, department, cpsc).
@@ -253,6 +256,7 @@ prop(cpsc406,department,cpsc).
 
 prop(cpsc410,number,410).
 prop(cpsc410,department,cpsc).
+prop(cpsc410, requirement, research).
 
 prop(cpsc411,number,411).
 prop(cpsc411,department,cpsc).
@@ -283,15 +287,18 @@ prop(cpsc436D,department,cpsc).
 
 prop(cpsc444,number,444).
 prop(cpsc444,department,cpsc).
+prop(cpsc444, requirement, research).
 
 prop(cpsc445,number,445).
 prop(cpsc445,department,cpsc).
 
 prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
+prop(cpsc448, requirement, research).
 
 prop(cpsc449,number,449).
 prop(cpsc449,department,cpsc).
+prop(cpsc449, requirement, research).
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
