@@ -102,68 +102,6 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat200],
 second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241], R).
 
 
-%% --- Meets Arts Language requirement
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [arbc400], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [arbc202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [asla400], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [cnto301], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [cnto311], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin117], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin118], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin243], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin244], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin107], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin108], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin233], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [chin234], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [dani210], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel212], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel222], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel232], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel242], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel252], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel262], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fnel292], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [fren112], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [germ210], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [grek200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [grek202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hebr405], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hebr202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hinu200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [hinu202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [indo200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [indo202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital203], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ital206], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn103], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn151], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn201], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [japn260], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [korn200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [korn202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [latn200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [latn202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pers104], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pers201], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [pols300], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [port202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [port210], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [punj200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [punj202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [russ200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans200], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans400], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [sans401], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span112], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span202], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [swed210], R).
-lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ukrn225], R).
-
-
 %%            NLP
 %% ----------------------------------------------------------------
 
