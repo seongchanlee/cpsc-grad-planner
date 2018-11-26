@@ -1,13 +1,14 @@
 
 graduated(Transcript, Unused) :-
-    complete(Transcript, _, _, _).
+    complete(Transcript, _, _).
 
 %% complete([cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc320, cpsc322, cpsc304, cpsc311, cpsc312, cpsc404, cpsc411, cpsc410], CS, _,_).
 %% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101, cpsc210, cpsc213, cpsc221, math200, math221], CS, _, _).
-complete(Transcript, CSDegreeRequirements, ArtsRequirements, Misc):-
-    cs_requirements(Transcript, Result),
-    check_difference(Transcript, CSDegreeRequirements, Result).
-%% add arts and misc here
+complete(Transcript, CSDegreeRequirements, ArtsRequirements):-
+    cs_requirements(Transcript, Result1),
+    check_difference(Transcript, CSDegreeRequirements, Result1),
+    arts_requirements(Result1, Result2),
+    check_difference(Result1, ArtsRequirements, Result2).
 
 
 %%                  CS REQUIREMENTS
@@ -161,6 +162,24 @@ lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span112], R).
 lang_req(Transcript, R) :- remove_from_transcript(Transcript, [span202], R).
 lang_req(Transcript, R) :- remove_from_transcript(Transcript, [swed210], R).
 lang_req(Transcript, R) :- remove_from_transcript(Transcript, [ukrn225], R).
+
+
+%%            NLP
+%% ----------------------------------------------------------------
+
+% q(Transcript) to start.
+% transcript should be entered with double quotation marks
+% TODO: try to add question processing
+
+q(Transcript) :-
+    write("Enter your transcript: "),
+    % readln(Ln1),
+    % write("Ask me: "),flush_output(current_output2),
+    read(Ln1),
+    split_string(Ln1, ",", "", Transcript),
+    graduated(Transcript, _).
+
+% question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
 
 
 %% 						COURSE DECLARATIONS
