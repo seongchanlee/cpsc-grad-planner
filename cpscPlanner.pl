@@ -105,19 +105,15 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241],
 %%            NLP
 %% ----------------------------------------------------------------
 
-% q(Transcript) to start.
-% transcript should be entered with double quotation marks
-% TODO: try to add question processing
+% Sample run: q([can, i, graduate], Ans).
+% transcript has to be a list; e.g. [cpsc110, cpsc121, ...]
 
-q(Transcript) :-
+q(Question, Ans) :-
     write("Enter your transcript: "),
-    % readln(Ln1),
-    % write("Ask me: "),flush_output(current_output2),
-    read(Ln1),
-    split_string(Ln1, ",", "", Transcript),
-    graduated(Transcript, _).
+    read(Transcript),
+    question(Transcript, Question, Ans).
 
-% question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
+question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
 
 
 %% 						COURSE DECLARATIONS
