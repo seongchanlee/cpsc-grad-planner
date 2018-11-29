@@ -3,6 +3,8 @@ graduated(Transcript, Unused) :-
     complete(Transcript, _, _).
 
 %% complete([cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc320, cpsc322, cpsc304, cpsc311, cpsc312, cpsc404, cpsc411, cpsc410], CS, _,_).
+%% exampleTranscript = [cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc320, cpsc311, cpsc319, cpsc322, cpsc340, cpsc410, cpsc424, cpsc422, wrds150, grek200, latn301, slav307, asia212, cens202, fren220, fhis333, germ426, hebr479, ital202, ital203, span112, ukrn225, phil375, pols345, hinu200, hinu202, rmst221, sans300, punj403]
+
 %% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101, cpsc210, cpsc213, cpsc221, math200, math221], CS, _, _).
 complete(Transcript, CSDegreeRequirements, ArtsRequirements):-
     cs_requirements(Transcript, Result1),
@@ -66,7 +68,9 @@ arts_requirements(Transcript, Result) :-
     prop(Course3, requirement, literature),
     select(Course3, Res2, Res3),
     prop(Course4, requirement, research),
-    select(Course4, Res3, Result).
+    select(Course4, Res3, Res4),
+    prop(Course5, requirement, writing),
+    select(Course5, Res4, Result).
 
 
 %%                  HELPER FUNCTIONS
@@ -105,19 +109,15 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241],
 %%            NLP
 %% ----------------------------------------------------------------
 
-% q(Transcript) to start.
-% transcript should be entered with double quotation marks
-% TODO: try to add question processing
+% Sample run: q([can, i, graduate], Ans).
+% transcript has to be a list; e.g. [cpsc110, cpsc121, ...]
 
-q(Transcript) :-
+q(Question, Ans) :-
     write("Enter your transcript: "),
-    % readln(Ln1),
-    % write("Ask me: "),flush_output(current_output2),
-    read(Ln1),
-    split_string(Ln1, ",", "", Transcript),
-    graduated(Transcript, _).
+    read(Transcript),
+    question(Transcript, Question, Ans).
 
-% question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
+question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
 
 
 %% 						COURSE DECLARATIONS
@@ -262,6 +262,30 @@ prop(cpsc490,department,cpsc).
 
 
 %% ARTS COURSE DECLARATIONS
+
+%% WRITING REQUIREMENTS
+
+prop(wrds150, number, 150).
+prop(wrds150, department, wrds).
+prop(wrds150, requirement, writing).
+
+prop(wrds350, number, 350).
+prop(wrds350, department, wrds).
+prop(wrds350, requirement, writing).
+
+prop(engl100, number, 100).
+prop(engl100, department, engl).
+prop(engl100, requirement, writing).
+
+prop(astu100, number, 100).
+prop(astu100, department, astu).
+prop(astu100, requirement, writing).
+
+prop(astu101, number, 101).
+prop(astu101, department, astu).
+prop(astu101, requirement, writing).
+
+
 
 %% LANGUAGE REQUIREMENTS
 
