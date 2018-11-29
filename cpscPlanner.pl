@@ -154,10 +154,14 @@ prop(cpsc103, credits, 3).
 prop(cpsc110,number,110).
 prop(cpsc110,department,cpsc).
 prop(cpsc110, credits, 4).
+prop(cpsc110, fail, 40).
+prop(cpsc110, pass, 256).
 
 prop(cpsc121,number,121).
 prop(cpsc121,department,cpsc).
 prop(cpsc121, credits, 4).
+prop(cpsc121, fail, 17).
+prop(cpsc121, pass, 209).
 
 
 % CPSC 200 levels
@@ -165,77 +169,113 @@ prop(cpsc121, credits, 4).
 prop(cpsc210, number, 210).
 prop(cpsc210, department, cpsc).
 prop(cpsc210, credits, 4).
+prop(cpsc210, fail, 12).
+prop(cpsc210, pass, 141).
 
 prop(cpsc213, number, 213).
 prop(cpsc213, department, cpsc).
 prop(cpsc213, credits, 4).
+prop(cpsc213, fail, 13).
+prop(cpsc213, pass, 134).
 
 prop(cpsc221, number, 221).
 prop(cpsc221, department, cpsc).
 prop(cpsc221, credits, 4).
+prop(cpsc221, fail, 8).
+prop(cpsc221, pass, 128).
 
 
 % CPSC 300 levels
 prop(cpsc301, number, 301).
 prop(cpsc301, department, cpsc).
 prop(cpsc301, credits, 3).
+prop(cpsc301, fail, 0).
+prop(cpsc301, pass, 151).
 
 prop(cpsc302, number, 302).
 prop(cpsc302, department, cpsc).
 prop(cpsc302, credits, 3).
+prop(cpsc302, fail, 2).
+prop(cpsc302, pass, 64).
 
 prop(cpsc303, number, 303).
 prop(cpsc303, department, cpsc).
 prop(cpsc303, credits, 3).
+prop(cpsc303, fail, 1).
+prop(cpsc303, pass, 64).
 
 prop(cpsc304, number, 304).
 prop(cpsc304, department, cpsc).
 prop(cpsc304, credits, 3).
+prop(cpsc304, fail, 4).
+prop(cpsc304, pass, 155).
 
 prop(cpsc310, number, 310).
 prop(cpsc310, department, cpsc).
 prop(cpsc310, credits, 3).
+prop(cpsc310, fail, 3).
+prop(cpsc310, pass, 162).
 
 prop(cpsc311, number, 311).
 prop(cpsc311, department, cpsc).
 prop(cpsc311, credits, 3).
+prop(cpsc311, fail, 2).
+prop(cpsc311, pass, 105).
 
 prop(cpsc312, number, 312).
 prop(cpsc312, department, cpsc).
 prop(cpsc312, credits, 3).
+prop(cpsc312, fail, 2).
+prop(cpsc312, pass, 138).
 
 prop(cpsc313, number, 313).
 prop(cpsc313, department, cpsc).
 prop(cpsc313, credits, 3).
+prop(cpsc313, fail, 15).
+prop(cpsc313, pass, 176).
 
 prop(cpsc314, number, 314).
 prop(cpsc314, department, cpsc).
 prop(cpsc314, credits, 3).
+prop(cpsc314, fail, 2).
+prop(cpsc314, pass, 65).
 
 prop(cpsc317, number, 317).
 prop(cpsc317, department, cpsc).
 prop(cpsc317, credits, 3).
+prop(cpsc317, fail, 7).
+prop(cpsc317, pass, 112).
 
 prop(cpsc319, number, 319).
 prop(cpsc319, department, cpsc).
 prop(cpsc319, requirement, research).
 prop(cpsc319, credits, 4).
+prop(cpsc319, fail, 0).
+prop(cpsc319, pass, 74).
 
 prop(cpsc320, number, 320).
 prop(cpsc320, department, cpsc).
 prop(cpsc320, credits, 3).
+prop(cpsc320, fail, 12).
+prop(cpsc320, pass, 120).
 
 prop(cpsc322, number, 322).
 prop(cpsc322, department, cpsc).
 prop(cpsc322, credits, 3).
+prop(cpsc322, fail, 8).
+prop(cpsc322, pass, 108).
 
 prop(cpsc340, number, 340).
 prop(cpsc340, department, cpsc).
 prop(cpsc340, credits, 3).
+prop(cpsc340, fail, 1).
+prop(cpsc340, pass, 146).
 
 prop(cpsc344, number, 344).
 prop(cpsc344, department, cpsc).
 prop(cpsc344, credits, 3).
+prop(cpsc344, fail, 2).
+prop(cpsc344, pass, 93).
 
 prop(cpsc349, number, 349).
 prop(cpsc349, department, cpsc).
@@ -247,6 +287,8 @@ prop(cpsc349, credits, 3).
 prop(cpsc404,number,404).
 prop(cpsc404,department,cpsc).
 prop(cpsc404, credits, 3).
+prop(cpsc404, fail, 1).
+prop(cpsc404, pass, 116).
 
 prop(cpsc406,number,406).
 prop(cpsc406,department,cpsc).
@@ -256,26 +298,38 @@ prop(cpsc410,number,410).
 prop(cpsc410,department,cpsc).
 prop(cpsc410, requirement, research).
 prop(cpsc410, credits, 3).
+prop(cpsc410, fail, 0).
+prop(cpsc410, pass, 118).
 
 prop(cpsc411,number,411).
 prop(cpsc411,department,cpsc).
 prop(cpsc411, credits, 3).
+prop(cpsc411, fail, 0).
+prop(cpsc411, pass, 44).
 
 prop(cpsc415,number,415).
 prop(cpsc415,department,cpsc).
 prop(cpsc415, credits, 3).
+prop(cpsc415, fail, 5).
+prop(cpsc415, pass, 67).
 
 prop(cpsc416,number,416).
 prop(cpsc416,department,cpsc).
 prop(cpsc416, credits, 3).
+prop(cpsc416, fail, 0).
+prop(cpsc416, pass, 77).
 
 prop(cpsc418,number,418).
 prop(cpsc418,department,cpsc).
 prop(cpsc418, credits, 3).
+prop(cpsc418, fail, 0).
+prop(cpsc418, pass, 51).
 
 prop(cpsc420,number,420).
 prop(cpsc420,department,cpsc).
 prop(cpsc420, credits, 3).
+prop(cpsc420, fail, 4).
+prop(cpsc420, pass, 55).
 
 prop(cpsc421,number,421).
 prop(cpsc421,department,cpsc).
@@ -284,6 +338,8 @@ prop(cpsc421, credits, 3).
 prop(cpsc422,number,422).
 prop(cpsc422,department,cpsc).
 prop(cpsc422, credits, 3).
+prop(cpsc422, fail, 2).
+prop(cpsc422, pass, 44).
 
 prop(cpsc424,number,424).
 prop(cpsc424,department,cpsc).
@@ -297,10 +353,14 @@ prop(cpsc444,number,444).
 prop(cpsc444,department,cpsc).
 prop(cpsc444, requirement, research).
 prop(cpsc444, credits, 3).
+prop(cpsc444, fail, 0).
+prop(cpsc444, pass, 51).
 
 prop(cpsc445,number,445).
 prop(cpsc445,department,cpsc).
 prop(cpsc445, credits, 3).
+prop(cpsc445, fail, 0).
+prop(cpsc445, pass, 32).
 
 prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
@@ -311,10 +371,14 @@ prop(cpsc449,number,449).
 prop(cpsc449,department,cpsc).
 prop(cpsc449, requirement, research).
 prop(cpsc449, credits, 6).
+prop(cpsc449, fail, 0).
+prop(cpsc449, pass, 4).
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
 prop(cpsc490, credits, 3).
+prop(cpsc490, fail, 0).
+prop(cpsc490, pass, 14).
 
 
 %% ARTS COURSE DECLARATIONS
@@ -1230,66 +1294,82 @@ prop(slav307, requirement, literature).
 prop(span221, number, 221).
 prop(span221, department, span).
 prop(span221, requirement, literature).
+prop(span221, credits, 3).
 
 prop(span222, number, 222).
 prop(span222, department, span).
 prop(span222, requirement, literature).
+prop(span222, credits, 3).
 
 prop(span280, number, 280).
 prop(span280, department, span).
 prop(span280, requirement, literature).
+prop(span280, credits, 3).
 
 prop(span312, number, 312).
 prop(span312, department, span).
 prop(span312, requirement, literature).
+prop(span312, credits, 6).
 
 prop(span357, number, 357).
 prop(span357, department, span).
 prop(span357, requirement, literature).
+prop(span357, credits, 3).
 
 prop(span358, number, 358).
 prop(span358, department, span).
 prop(span358, requirement, literature).
+prop(span358, credit, 3).
 
 prop(span364, number, 364).
 prop(span364, department, span).
 prop(span364, requirement, literature).
+prop(span364, credit, 3).
 
 prop(span365, number, 365).
 prop(span365, department, span).
 prop(span365, requirement, literature).
+prop(span365, credits, 3).
 
 prop(span406, number, 406).
 prop(span406, department, span).
 prop(span406, requirement, literature).
+prop(span406, credits, 3).
 
 prop(span410, number, 410).
 prop(span410, department, span).
 prop(span410, requirement, literature).
+prop(span410, credits, 6).
 
 prop(thtr210, number, 210).
 prop(thtr210, department, thtr).
 prop(thtr210, requirement, literature).
+prop(thtr210, credits, 3).
 
 prop(thtr211, number, 211).
 prop(thtr211, department, thtr).
 prop(thtr211, requirement, literature).
+prop(thtr211, credits, 3).
 
 prop(thtr245, number, 245).
 prop(thtr245, department, thtr).
 prop(thtr245, requirement, literature).
+prop(thtr245, credits, 3).
 
 prop(thtr310, number, 310).
 prop(thtr310, department, thtr).
 prop(thtr310, requirement, literature).
+prop(thtr310, credits, 3).
 
 prop(thtr311, number, 311).
 prop(thtr311, department, thtr).
 prop(thtr311, requirement, literature).
+prop(thtr311, credits, 3).
 
 prop(thtr410, number, 410).
 prop(thtr410, department, thtr).
 prop(thtr410, requirement, literature).
+prop(thtr410, credits, 3).
 
 
 
