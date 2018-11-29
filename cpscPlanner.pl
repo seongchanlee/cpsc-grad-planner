@@ -346,6 +346,7 @@ prop(cpsc404, average, 81.82).
 prop(cpsc404, instructor, tsiknis).
 prop(cpsc404, fail, 1).
 prop(cpsc404, pass, 116).
+prop(cpsc404, name, "cpsc404").
 
 prop(cpsc406,number,406).
 prop(cpsc406,department,cpsc).
@@ -359,6 +360,7 @@ prop(cpsc410, average, 79).
 prop(cpsc410, instructor, holmes).
 prop(cpsc410, fail, 0).
 prop(cpsc410, pass, 118).
+prop(cpsc410, name, "cpsc410").
 
 prop(cpsc411,number,411).
 prop(cpsc411,department,cpsc).
@@ -367,6 +369,7 @@ prop(cpsc411, average, 86).
 prop(cpsc411, instructor, garcia).
 prop(cpsc411, fail, 0).
 prop(cpsc411, pass, 44).
+prop(cpsc411, name, "cpsc411").
 
 prop(cpsc415,number,415).
 prop(cpsc415,department,cpsc).
@@ -374,6 +377,7 @@ prop(cpsc415, credits, 3).
 prop(cpsc415, average, 72).
 prop(cpsc415, instructor, acton).
 prop(cpsc415, fail, 5).
+prop(cpsc415, name, "cpsc415").
 
 prop(cpsc416,number,416).
 prop(cpsc416,department,cpsc).
@@ -382,6 +386,7 @@ prop(cpsc416, average, 81.18).
 prop(cpsc416, instructor, beschastnikh).
 prop(cpsc416, fail, 0).
 prop(cpsc416, pass, 77).
+prop(cpsc416, name, "cpsc416").
 
 prop(cpsc418,number,418).
 prop(cpsc418,department,cpsc).
@@ -390,6 +395,7 @@ prop(cpsc418, average, 86.08).
 prop(cpsc418, instructor, greenstreet).
 prop(cpsc418, fail, 0).
 prop(cpsc418, pass, 51).
+prop(cpsc418, name, "cpsc418").
 
 prop(cpsc420,number,420).
 prop(cpsc420,department,cpsc).
@@ -398,12 +404,14 @@ prop(cpsc420, average, 73.63).
 prop(cpsc420, instructor, evans).
 prop(cpsc420, fail, 4).
 prop(cpsc420, pass, 55).
+prop(cpsc420, name, "cpsc420").
 
 prop(cpsc421,number,421).
 prop(cpsc421,department,cpsc).
 prop(cpsc421, credits, 3).
 prop(cpsc421, average, 73.73).
 prop(cpsc421, instructor, fiedman).
+prop(cpsc421, name, "cpsc421").
 
 prop(cpsc422,number,422).
 prop(cpsc422,department,cpsc).
@@ -412,6 +420,7 @@ prop(cpsc422, average, 74.54).
 prop(cpsc422, instructor, carenini).
 prop(cpsc422, fail, 2).
 prop(cpsc422, pass, 44).
+prop(cpsc422, name, "cpsc422").
 
 prop(cpsc424,number,424).
 prop(cpsc424,department,cpsc).
@@ -429,6 +438,7 @@ prop(cpsc444, average, 77.43).
 prop(cpsc444, instructor, dawson).
 prop(cpsc444, fail, 0).
 prop(cpsc444, pass, 51).
+prop(cpsc444, name, "cpsc444").
 
 prop(cpsc445,number,445).
 prop(cpsc445,department,cpsc).
@@ -437,6 +447,7 @@ prop(cpsc445, average, 83.59).
 prop(cpsc445, instructor, hoos).
 prop(cpsc445, fail, 0).
 prop(cpsc445, pass, 32).
+prop(cpsc444, name, "cpsc444").
 
 prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
@@ -451,6 +462,7 @@ prop(cpsc449, average, 90.25).
 prop(cpsc449, instructor, tsiknis).
 prop(cpsc449, fail, 0).
 prop(cpsc449, pass, 4).
+prop(cpsc449, name, "cpsc449").
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
@@ -458,6 +470,7 @@ prop(cpsc490, credits, 3).
 prop(cpsc490, average, 84.5).
 prop(cpsc490, fail, 0).
 prop(cpsc490, pass, 14).
+prop(cpsc490, name, "cpsc490").
 
 
 %% ARTS COURSE DECLARATIONS
