@@ -125,16 +125,54 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241],
 %%            NLP
 %% ----------------------------------------------------------------
 
-% Sample run: q([can, i, graduate], Ans).
+% Sample run: q(Ans).
 % transcript has to be a list; e.g. [cpsc110, cpsc121, ...]
+% questions has to be surrounded by the quotation marks; e.g. "can i graduate"
 
-q(Question, Ans) :-
+q(Ans) :-
     write("Enter your transcript: "),
     read(Transcript),
-    question(Transcript, Question, Ans).
+    write("Ask me: "),
+    read(Ln),
+    split_string(Ln, " ", "", Question),
+    ask(Transcript, Question, Ans).
 
-question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
+ask(Transcript, ["can", "i", "graduate"], yes) :- graduated(Transcript, _).
+ask(Transcript, ["did", "i", "finish" | T], yes) :-
+  req_finish_sub_question(T, Transcript).
+ask(_, ["what", "is", "average", "for", CourseName], Ans) :-
+  prop(Course, name, CourseName),
+  prop(Course, average, Ans).
+ask(_, ["how", "many", "people", "failed", CourseName], Ans) :-
+  prop(Course, name, CourseName),
+  prop(Course, fail, Ans).
+ask(_, ["how", "many", "people", "passed", CourseName], Ans) :-
+  prop(Course, name, CourseName),
+  prop(Course, pass, Ans).
+ask(_, ["who", "is", "the", "instructor", "for", CourseName], Ans) :-
+  prop(Course, name, CourseName),
+  prop(Course, instructor, Ans).
 
+req_finish_sub_question(["first", "year", "cs", "requirements"], Transcript) :-
+  first_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question(["second", "year", "cs", "requirements"], Transcript) :-
+  second_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question(["upper", "level", "cs", "requirements"], Transcript) :-
+  thirdfourth_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question(["language", "requirements"], Transcript) :-
+  language_requirement(Transcript, _).
+
+req_finish_sub_question(["literature", "requirements"], Transcript) :-
+  literature_requirement(Transcript, _).
+
+req_finish_sub_question(["research", "requirements"], Transcript) :-
+  research_requirement(Transcript, _).
+
+req_finish_sub_question(["writing", "requirements"], Transcript) :-
+  writing_requirement(Transcript, _).
 
 %% 						COURSE DECLARATIONS
 %% ----------------------------------------------------------------
@@ -147,6 +185,7 @@ prop(cpsc100,number,100).
 prop(cpsc100,department,cpsc).
 prop(cpsc100, credits, 3).
 prop(cpsc100, name, "cpsc100").
+
 
 prop(cpsc103,number,103).
 prop(cpsc103,department,cpsc).
