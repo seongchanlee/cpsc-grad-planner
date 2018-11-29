@@ -146,10 +146,12 @@ question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
 prop(cpsc100,number,100).
 prop(cpsc100,department,cpsc).
 prop(cpsc100, credits, 3).
+prop(cpsc100, name, "cpsc100").
 
 prop(cpsc103,number,103).
 prop(cpsc103,department,cpsc).
 prop(cpsc103, credits, 3).
+prop(cpsc103, name, "cpsc103").
 
 prop(cpsc110,number,110).
 prop(cpsc110,department,cpsc).
@@ -163,6 +165,7 @@ prop(cpsc110, instructor, allen).
 prop(cpsc110, instructor, berg).
 prop(cpsc110, fail, 40).
 prop(cpsc110, pass, 256).
+prop(cpsc110, name, "cpsc110").
 
 prop(cpsc121,number,121).
 prop(cpsc121,department,cpsc).
@@ -173,7 +176,7 @@ prop(cpsc121, instructor, gao).
 prop(cpsc121, instructor, tsiknis).
 prop(cpsc121, fail, 17).
 prop(cpsc121, pass, 209).
-
+prop(cpsc121, name, "cpsc121").
 
 % CPSC 200 levels
 
@@ -186,6 +189,7 @@ prop(cpsc210, instructor, carter).
 prop(cpsc210, instructor, hutchinson).
 prop(cpsc210, fail, 12).
 prop(cpsc210, pass, 141).
+prop(cpsc210, name, "cpsc210").
 
 prop(cpsc213, number, 213).
 prop(cpsc213, department, cpsc).
@@ -194,6 +198,7 @@ prop(cpsc213, average, 71.89).
 prop(cpsc213, instructor, feeley).
 prop(cpsc213, fail, 13).
 prop(cpsc213, pass, 134).
+prop(cpsc213, name, "cpsc213").
 
 prop(cpsc221, number, 221).
 prop(cpsc221, department, cpsc).
@@ -204,6 +209,7 @@ prop(cpsc221, instructor, hu).
 prop(cpsc221, instructor, kotthoff).
 prop(cpsc221, fail, 8).
 prop(cpsc221, pass, 128).
+prop(cpsc221, name, "cpsc221").
 
 
 % CPSC 300 levels
@@ -214,6 +220,7 @@ prop(cpsc301, average, 82.99).
 prop(cpsc301, instructor, tsiknis).
 prop(cpsc301, fail, 0).
 prop(cpsc301, pass, 151).
+prop(cpsc301, name, "cpsc301").
 
 prop(cpsc302, number, 302).
 prop(cpsc302, department, cpsc).
@@ -222,6 +229,7 @@ prop(cpsc302, average, 79.29).
 prop(cpsc302, instructor, ascher).
 prop(cpsc302, fail, 2).
 prop(cpsc302, pass, 64).
+prop(cpsc302, name, "cpsc302").
 
 prop(cpsc303, number, 303).
 prop(cpsc303, department, cpsc).
@@ -230,6 +238,7 @@ prop(cpsc303, average, 74.23).
 prop(cpcs303, instructor, gelbart).
 prop(cpsc303, fail, 1).
 prop(cpsc303, pass, 64).
+prop(cpsc303, name, "cpsc303").
 
 prop(cpsc304, number, 304).
 prop(cpsc304, department, cpsc).
@@ -239,6 +248,7 @@ prop(cpsc304, instructor, lakshmanan).
 prop(cpsc304, instructor, ng).
 prop(cpsc304, fail, 4).
 prop(cpsc304, pass, 155).
+prop(cpsc304, name, "cpsc304").
 
 prop(cpsc310, number, 310).
 prop(cpsc310, department, cpsc).
@@ -247,6 +257,7 @@ prop(cpsc310, average, 77.13).
 prop(cpsc310, instructor, baniassad).
 prop(cpsc310, fail, 3).
 prop(cpsc310, pass, 162).
+prop(cpsc310, name, "cpsc310").
 
 prop(cpsc311, number, 311).
 prop(cpsc311, department, cpsc).
@@ -255,6 +266,7 @@ prop(cpsc311, average, 84.39).
 prop(cpsc110, instructor, dunfield).
 prop(cpsc311, fail, 2).
 prop(cpsc311, pass, 105).
+prop(cpsc311, name, "cpsc311").
 
 prop(cpsc312, number, 312).
 prop(cpsc312, department, cpsc).
@@ -263,6 +275,7 @@ prop(cpsc312, average, 76.93).
 prop(cpsc110, instructor, sagaii).
 prop(cpsc312, fail, 2).
 prop(cpsc312, pass, 138).
+prop(cpsc312, name, "cpsc312").
 
 prop(cpsc313, number, 313).
 prop(cpsc313, department, cpsc).
@@ -272,6 +285,7 @@ prop(cpsc313, instructor, belleville).
 prop(cpsc313, instructor, acton).
 prop(cpsc313, fail, 15).
 prop(cpsc313, pass, 176).
+prop(cpsc313, name, "cpsc313").
 
 prop(cpsc314, number, 314).
 prop(cpsc314, department, cpsc).
@@ -281,6 +295,7 @@ prop(cpsc314, instructor, bessmeltsev).
 prop(cpsc314, instructor, munzner).
 prop(cpsc314, fail, 2).
 prop(cpsc314, pass, 65).
+prop(cpsc314, name, "cpsc314").
 
 prop(cpsc317, number, 317).
 prop(cpsc317, department, cpsc).
@@ -289,6 +304,7 @@ prop(cpsc317, average, 73.45).
 prop(cpsc317, instructor, acton).
 prop(cpsc317, fail, 7).
 prop(cpsc317, pass, 112).
+prop(cpsc317, name, "cpsc317").
 
 prop(cpsc319, number, 319).
 prop(cpsc319, department, cpsc).
@@ -298,6 +314,7 @@ prop(cpsc319, average, 87.93).
 prop(cpsc319, instructor, awad).
 prop(cpsc319, fail, 0).
 prop(cpsc319, pass, 74).
+prop(cpsc319, name, "cpsc319").
 
 prop(cpsc320, number, 320).
 prop(cpsc320, department, cpsc).
@@ -306,6 +323,7 @@ prop(cpsc320, average, 70.48).
 prop(cpsc320, instructor, manuch).
 prop(cpsc320, fail, 12).
 prop(cpsc320, pass, 120).
+prop(cpsc320, name, "cpsc320").
 
 prop(cpsc322, number, 322).
 prop(cpsc322, department, cpsc).
@@ -315,6 +333,7 @@ prop(cpsc322, instructor, conati).
 prop(cpsc322, instructor, poole).
 prop(cpsc322, fail, 8).
 prop(cpsc322, pass, 108).
+prop(cpsc322, name, "cpsc322").
 
 prop(cpsc340, number, 340).
 prop(cpsc340, department, cpsc).
@@ -323,6 +342,7 @@ prop(cpsc340, average, 80.29).
 prop(cpsc340, instructor, schmidt).
 prop(cpsc340, fail, 1).
 prop(cpsc340, pass, 146).
+prop(cpsc340, name, "cpsc340").
 
 prop(cpsc344, number, 344).
 prop(cpsc344, department, cpsc).
@@ -331,11 +351,12 @@ prop(cpsc344, average, 78.28).
 prop(cpsc344, instructor, maclean).
 prop(cpsc344, fail, 2).
 prop(cpsc344, pass, 93).
+prop(cpsc344, name, "cpsc344").
 
 prop(cpsc349, number, 349).
 prop(cpsc349, department, cpsc).
 prop(cpsc349, credits, 3).
-
+prop(cpsc349, name, "cpsc349").
 
 % CPSC 400 levels
 
@@ -351,6 +372,7 @@ prop(cpsc404, name, "cpsc404").
 prop(cpsc406,number,406).
 prop(cpsc406,department,cpsc).
 prop(cpsc406, credits, 3).
+prop(cpsc406, name, "cpsc406").
 
 prop(cpsc410,number,410).
 prop(cpsc410,department,cpsc).
@@ -425,10 +447,12 @@ prop(cpsc422, name, "cpsc422").
 prop(cpsc424,number,424).
 prop(cpsc424,department,cpsc).
 prop(cpsc424, credits, 3).
+prop(cpsc424, name, "cpsc424").
 
 prop(cpsc436D,number,436).
 prop(cpsc436D,department,cpsc).
 prop(cpsc436D, credits, 3).
+prop(cpsc436D, name, "cpsc436D").
 
 prop(cpsc444,number,444).
 prop(cpsc444,department,cpsc).
@@ -453,6 +477,7 @@ prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
 prop(cpsc448, requirement, research).
 prop(cpsc448, credits, 3).
+prop(cpsc448, name, "cpsc448").
 
 prop(cpsc449,number,449).
 prop(cpsc449,department,cpsc).
