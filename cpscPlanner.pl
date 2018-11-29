@@ -61,16 +61,32 @@ fourhunnid_level_CPSC(Transcript, Course, Result) :-
 %% ----------------------------------------------------------------------------------
 
 arts_requirements(Transcript, Result) :-
+    language_requirement(Transcript, R1),
+    literature_requirement(R1, R2),
+    research_requirement(R2, R3),
+    writing_requirement(R3, Result).
+
+language_requirement(Transcript, Result) :-
+    % language (3 credits)
     prop(Course, requirement, lang),
-    select(Course, Transcript, Res1),
+    select(Course, Transcript, Result).
+
+literature_requirement(Transcript, Result) :-
+    % literature (6 credits)
+    prop(Course1, requirement, literature),
+    select(Course1, Transcript, R1),
     prop(Course2, requirement, literature),
-    select(Course2, Res1, Res2),
-    prop(Course3, requirement, literature),
-    select(Course3, Res2, Res3),
-    prop(Course4, requirement, research),
-    select(Course4, Res3, Res4),
-    prop(Course5, requirement, writing),
-    select(Course5, Res4, Result).
+    select(Course2, R1, Result).
+
+research_requirement(Transcript, Result) :-
+    % research (3 credits)
+    prop(Course, requirement, research),
+    select(Course, Transcript, Result).
+
+writing_requirement(Transcript, Result) :-
+    % writing (3 credits)
+    prop(Course, requirement, writing),
+    select(Course, Transcript, Result).
 
 
 %%                  HELPER FUNCTIONS
