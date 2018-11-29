@@ -131,10 +131,32 @@ second_year_math(Transcript, R) :- remove_from_transcript(Transcript, [stat241],
 q(Question, Ans) :-
     write("Enter your transcript: "),
     read(Transcript),
-    question(Transcript, Question, Ans).
+    ask(Transcript, Question, Ans).
 
-question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
+ask(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
+ask(Transcript, [did, i, finish | T], yes) :-
+  req_finish_sub_question(T, Transcript).
 
+req_finish_sub_question([first, year, cs, requirements], Transcript) :-
+  first_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question([second, year, cs, requirements], Transcript) :-
+  second_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question([upper, level, cs, requirements], Transcript) :-
+  thirdfourth_year_cs_requirements(Transcript, _).
+
+req_finish_sub_question([language, requirements], Transcript) :-
+  language_requirement(Transcript, _).
+
+req_finish_sub_question([literature, requirements], Transcript) :-
+  literature_requirement(Transcript, _).
+
+req_finish_sub_question([research, requirements], Transcript) :-
+  research_requirement(Transcript, _).
+
+req_finish_sub_question([writing, requirements], Transcript) :-
+  writing_requirement(Transcript, _).
 
 %% 						COURSE DECLARATIONS
 %% ----------------------------------------------------------------
