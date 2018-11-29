@@ -154,10 +154,12 @@ prop(cpsc103, credits, 3).
 prop(cpsc110,number,110).
 prop(cpsc110,department,cpsc).
 prop(cpsc110, credits, 4).
+prop(cpsc110, average, 74.79).
 
 prop(cpsc121,number,121).
 prop(cpsc121,department,cpsc).
 prop(cpsc121, credits, 4).
+prop(cpsc121, average, 76.65).
 
 
 % CPSC 200 levels
@@ -165,77 +167,95 @@ prop(cpsc121, credits, 4).
 prop(cpsc210, number, 210).
 prop(cpsc210, department, cpsc).
 prop(cpsc210, credits, 4).
+prop(cpsc210, average, 74.17).
 
 prop(cpsc213, number, 213).
 prop(cpsc213, department, cpsc).
 prop(cpsc213, credits, 4).
+prop(cpsc213, average, 71.89).
 
 prop(cpsc221, number, 221).
 prop(cpsc221, department, cpsc).
 prop(cpsc221, credits, 4).
+prop(cpsc221, average, 74.04).
 
 
 % CPSC 300 levels
 prop(cpsc301, number, 301).
 prop(cpsc301, department, cpsc).
 prop(cpsc301, credits, 3).
+prop(cpsc301, average, 82.99).
 
 prop(cpsc302, number, 302).
 prop(cpsc302, department, cpsc).
 prop(cpsc302, credits, 3).
+prop(cpsc302, average, 79.29).
 
 prop(cpsc303, number, 303).
 prop(cpsc303, department, cpsc).
 prop(cpsc303, credits, 3).
+prop(cpsc303, average, 74.23).
 
 prop(cpsc304, number, 304).
 prop(cpsc304, department, cpsc).
 prop(cpsc304, credits, 3).
+prop(cpsc304, average, 79.56).
 
 prop(cpsc310, number, 310).
 prop(cpsc310, department, cpsc).
 prop(cpsc310, credits, 3).
+prop(cpsc310, average, 77.13).
 
 prop(cpsc311, number, 311).
 prop(cpsc311, department, cpsc).
 prop(cpsc311, credits, 3).
+prop(cpsc311, average, 84.39).
 
 prop(cpsc312, number, 312).
 prop(cpsc312, department, cpsc).
 prop(cpsc312, credits, 3).
+prop(cpsc312, average, 76.93).
 
 prop(cpsc313, number, 313).
 prop(cpsc313, department, cpsc).
 prop(cpsc313, credits, 3).
+prop(cpsc313, average, 73.62).
 
 prop(cpsc314, number, 314).
 prop(cpsc314, department, cpsc).
 prop(cpsc314, credits, 3).
+prop(cpsc314, average, 78.7).
 
 prop(cpsc317, number, 317).
 prop(cpsc317, department, cpsc).
 prop(cpsc317, credits, 3).
+prop(cpsc317, average, 73.45).
 
 prop(cpsc319, number, 319).
 prop(cpsc319, department, cpsc).
 prop(cpsc319, requirement, research).
 prop(cpsc319, credits, 4).
+prop(cpsc319, average, 87.93).
 
 prop(cpsc320, number, 320).
 prop(cpsc320, department, cpsc).
 prop(cpsc320, credits, 3).
+prop(cpsc320, average, 70.48).
 
 prop(cpsc322, number, 322).
 prop(cpsc322, department, cpsc).
 prop(cpsc322, credits, 3).
+prop(cpsc322, average, 73.55).
 
 prop(cpsc340, number, 340).
 prop(cpsc340, department, cpsc).
 prop(cpsc340, credits, 3).
+prop(cpsc340, average, 80.29).
 
 prop(cpsc344, number, 344).
 prop(cpsc344, department, cpsc).
 prop(cpsc344, credits, 3).
+prop(cpsc344, average, 78.28).
 
 prop(cpsc349, number, 349).
 prop(cpsc349, department, cpsc).
@@ -247,6 +267,7 @@ prop(cpsc349, credits, 3).
 prop(cpsc404,number,404).
 prop(cpsc404,department,cpsc).
 prop(cpsc404, credits, 3).
+prop(cpsc404, average, 81.82).
 
 prop(cpsc406,number,406).
 prop(cpsc406,department,cpsc).
@@ -256,34 +277,42 @@ prop(cpsc410,number,410).
 prop(cpsc410,department,cpsc).
 prop(cpsc410, requirement, research).
 prop(cpsc410, credits, 3).
+prop(cpsc410, average, 79).
 
 prop(cpsc411,number,411).
 prop(cpsc411,department,cpsc).
 prop(cpsc411, credits, 3).
+prop(cpsc311, average, 86).
 
 prop(cpsc415,number,415).
 prop(cpsc415,department,cpsc).
 prop(cpsc415, credits, 3).
+prop(cpsc415, average, 72).
 
 prop(cpsc416,number,416).
 prop(cpsc416,department,cpsc).
 prop(cpsc416, credits, 3).
+prop(cpsc416, average, 81.18).
 
 prop(cpsc418,number,418).
 prop(cpsc418,department,cpsc).
 prop(cpsc418, credits, 3).
+prop(cpsc418, average, 86.08).
 
 prop(cpsc420,number,420).
 prop(cpsc420,department,cpsc).
 prop(cpsc420, credits, 3).
+prop(cpsc420, average, 73.63).
 
 prop(cpsc421,number,421).
 prop(cpsc421,department,cpsc).
 prop(cpsc421, credits, 3).
+prop(cpsc421, average, 73.73).
 
 prop(cpsc422,number,422).
 prop(cpsc422,department,cpsc).
 prop(cpsc422, credits, 3).
+prop(cpsc422, average, 74.54).
 
 prop(cpsc424,number,424).
 prop(cpsc424,department,cpsc).
@@ -297,10 +326,12 @@ prop(cpsc444,number,444).
 prop(cpsc444,department,cpsc).
 prop(cpsc444, requirement, research).
 prop(cpsc444, credits, 3).
+prop(cpsc444, average, 77.43).
 
 prop(cpsc445,number,445).
 prop(cpsc445,department,cpsc).
 prop(cpsc445, credits, 3).
+prop(cpsc445, average, 83.59).
 
 prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
@@ -311,10 +342,12 @@ prop(cpsc449,number,449).
 prop(cpsc449,department,cpsc).
 prop(cpsc449, requirement, research).
 prop(cpsc449, credits, 6).
+prop(cpsc449, average, 90.25).
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
 prop(cpsc490, credits, 3).
+prop(cpsc490, average, 84.5).
 
 
 %% ARTS COURSE DECLARATIONS
