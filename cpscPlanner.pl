@@ -61,16 +61,32 @@ fourhunnid_level_CPSC(Transcript, Course, Result) :-
 %% ----------------------------------------------------------------------------------
 
 arts_requirements(Transcript, Result) :-
+    language_requirement(Transcript, R1),
+    literature_requirement(R1, R2),
+    research_requirement(R2, R3),
+    writing_requirement(R3, Result).
+
+language_requirement(Transcript, Result) :-
+    % language (3 credits)
     prop(Course, requirement, lang),
-    select(Course, Transcript, Res1),
+    select(Course, Transcript, Result).
+
+literature_requirement(Transcript, Result) :-
+    % literature (6 credits)
+    prop(Course1, requirement, literature),
+    select(Course1, Transcript, R1),
     prop(Course2, requirement, literature),
-    select(Course2, Res1, Res2),
-    prop(Course3, requirement, literature),
-    select(Course3, Res2, Res3),
-    prop(Course4, requirement, research),
-    select(Course4, Res3, Res4),
-    prop(Course5, requirement, writing),
-    select(Course5, Res4, Result).
+    select(Course2, R1, Result).
+
+research_requirement(Transcript, Result) :-
+    % research (3 credits)
+    prop(Course, requirement, research),
+    select(Course, Transcript, Result).
+
+writing_requirement(Transcript, Result) :-
+    % writing (3 credits)
+    prop(Course, requirement, writing),
+    select(Course, Transcript, Result).
 
 
 %%                  HELPER FUNCTIONS
@@ -129,136 +145,176 @@ question(Transcript, [can, i, graduate], yes) :- graduated(Transcript, _).
 
 prop(cpsc100,number,100).
 prop(cpsc100,department,cpsc).
+prop(cpsc100, credits, 3).
 
 prop(cpsc103,number,103).
 prop(cpsc103,department,cpsc).
+prop(cpsc103, credits, 3).
 
 prop(cpsc110,number,110).
 prop(cpsc110,department,cpsc).
+prop(cpsc110, credits, 4).
 
 prop(cpsc121,number,121).
 prop(cpsc121,department,cpsc).
+prop(cpsc121, credits, 4).
 
 
 % CPSC 200 levels
 
 prop(cpsc210, number, 210).
 prop(cpsc210, department, cpsc).
+prop(cpsc210, credits, 4).
 
 prop(cpsc213, number, 213).
 prop(cpsc213, department, cpsc).
+prop(cpsc213, credits, 4).
 
 prop(cpsc221, number, 221).
 prop(cpsc221, department, cpsc).
+prop(cpsc221, credits, 4).
 
 
 % CPSC 300 levels
 prop(cpsc301, number, 301).
 prop(cpsc301, department, cpsc).
+prop(cpsc301, credits, 3).
 
 prop(cpsc302, number, 302).
 prop(cpsc302, department, cpsc).
+prop(cpsc302, credits, 3).
 
 prop(cpsc303, number, 303).
 prop(cpsc303, department, cpsc).
+prop(cpsc303, credits, 3).
 
 prop(cpsc304, number, 304).
 prop(cpsc304, department, cpsc).
+prop(cpsc304, credits, 3).
 
 prop(cpsc310, number, 310).
 prop(cpsc310, department, cpsc).
+prop(cpsc310, credits, 3).
 
 prop(cpsc311, number, 311).
 prop(cpsc311, department, cpsc).
+prop(cpsc311, credits, 3).
 
 prop(cpsc312, number, 312).
 prop(cpsc312, department, cpsc).
+prop(cpsc312, credits, 3).
 
 prop(cpsc313, number, 313).
 prop(cpsc313, department, cpsc).
+prop(cpsc313, credits, 3).
 
 prop(cpsc314, number, 314).
 prop(cpsc314, department, cpsc).
+prop(cpsc314, credits, 3).
 
 prop(cpsc317, number, 317).
 prop(cpsc317, department, cpsc).
+prop(cpsc317, credits, 3).
 
 prop(cpsc319, number, 319).
 prop(cpsc319, department, cpsc).
 prop(cpsc319, requirement, research).
+prop(cpsc319, credits, 4).
 
 prop(cpsc320, number, 320).
 prop(cpsc320, department, cpsc).
+prop(cpsc320, credits, 3).
 
 prop(cpsc322, number, 322).
 prop(cpsc322, department, cpsc).
+prop(cpsc322, credits, 3).
 
 prop(cpsc340, number, 340).
 prop(cpsc340, department, cpsc).
+prop(cpsc340, credits, 3).
 
 prop(cpsc344, number, 344).
 prop(cpsc344, department, cpsc).
+prop(cpsc344, credits, 3).
 
 prop(cpsc349, number, 349).
 prop(cpsc349, department, cpsc).
+prop(cpsc349, credits, 3).
 
 
 % CPSC 400 levels
 
 prop(cpsc404,number,404).
 prop(cpsc404,department,cpsc).
+prop(cpsc404, credits, 3).
 
 prop(cpsc406,number,406).
 prop(cpsc406,department,cpsc).
+prop(cpsc406, credits, 3).
 
 prop(cpsc410,number,410).
 prop(cpsc410,department,cpsc).
 prop(cpsc410, requirement, research).
+prop(cpsc410, credits, 3).
 
 prop(cpsc411,number,411).
 prop(cpsc411,department,cpsc).
+prop(cpsc411, credits, 3).
 
 prop(cpsc415,number,415).
 prop(cpsc415,department,cpsc).
+prop(cpsc415, credits, 3).
 
 prop(cpsc416,number,416).
 prop(cpsc416,department,cpsc).
+prop(cpsc416, credits, 3).
 
 prop(cpsc418,number,418).
 prop(cpsc418,department,cpsc).
+prop(cpsc418, credits, 3).
 
 prop(cpsc420,number,420).
 prop(cpsc420,department,cpsc).
+prop(cpsc420, credits, 3).
 
 prop(cpsc421,number,421).
 prop(cpsc421,department,cpsc).
+prop(cpsc421, credits, 3).
 
 prop(cpsc422,number,422).
 prop(cpsc422,department,cpsc).
+prop(cpsc422, credits, 3).
 
 prop(cpsc424,number,424).
 prop(cpsc424,department,cpsc).
+prop(cpsc424, credits, 3).
 
 prop(cpsc436D,number,436).
 prop(cpsc436D,department,cpsc).
+prop(cpsc436D, credits, 3).
 
 prop(cpsc444,number,444).
 prop(cpsc444,department,cpsc).
 prop(cpsc444, requirement, research).
+prop(cpsc444, credits, 3).
 
 prop(cpsc445,number,445).
 prop(cpsc445,department,cpsc).
+prop(cpsc445, credits, 3).
 
 prop(cpsc448,number,448).
 prop(cpsc448,department,cpsc).
 prop(cpsc448, requirement, research).
+prop(cpsc448, credits, 3).
 
 prop(cpsc449,number,449).
 prop(cpsc449,department,cpsc).
 prop(cpsc449, requirement, research).
+prop(cpsc449, credits, 6).
 
 prop(cpsc490,number,490).
 prop(cpsc490,department,cpsc).
+prop(cpsc490, credits, 3).
 
 
 %% ARTS COURSE DECLARATIONS
@@ -268,22 +324,27 @@ prop(cpsc490,department,cpsc).
 prop(wrds150, number, 150).
 prop(wrds150, department, wrds).
 prop(wrds150, requirement, writing).
+prop(wrds150, credits, 3).
 
 prop(wrds350, number, 350).
 prop(wrds350, department, wrds).
 prop(wrds350, requirement, writing).
+prop(wrds350, credits, 3).
 
 prop(engl100, number, 100).
 prop(engl100, department, engl).
 prop(engl100, requirement, writing).
+prop(engl100, credits, 3).
 
 prop(astu100, number, 100).
 prop(astu100, department, astu).
 prop(astu100, requirement, writing).
+prop(astu100, credits, 3).
 
 prop(astu101, number, 101).
 prop(astu101, department, astu).
 prop(astu101, requirement, writing).
+prop(astu101, credits, 3).
 
 
 
@@ -292,358 +353,297 @@ prop(astu101, requirement, writing).
 prop(arbc400, number, 400).
 prop(arbc400, department, arbc).
 prop(arbc400, requirement, lang).
+prop(arb400, credits, 3).
 
 prop(arbc202, number, 202).
 prop(arbc202, department, arbc).
 prop(arbc202, requirement, lang).
+prop(arb202, credits, 3).
 
 prop(asla400, number, 400).
 prop(asla400, department, asla).
 prop(asla400, requirement, lang).
+prop(asla400, credits, 3).
 
 prop(cnto301, number, 301).
 prop(cnto301, department, cnto).
 prop(cnto301, requirement, lang).
+prop(cnto301, credits, 3).
 
 prop(cnto311, number, 311).
 prop(cnto311, department, cnto).
 prop(cnto311, requirement, lang).
+prop(cnto311, credits, 3).
 
 prop(chin117, number, 117).
 prop(chin117, department, chin).
 prop(chin117, requirement, lang).
+prop(chin117, credits, 3).
 
 prop(chin118, number, 117).
 prop(chin118, department, chin).
 prop(chin118, requirement, lang).
+prop(chin118, credits, 3).
 
 prop(chin243, number, 243).
 prop(chin243, department, chin).
 prop(chin243, requirement, lang).
+prop(chin243, credits, 3).
 
 prop(chin244, number, 244).
 prop(chin244, department, chin).
 prop(chin244, requirement, lang).
+prop(chin244, credits, 3).
 
 prop(chin107, number, 107).
 prop(chin107, department, chin).
 prop(chin107, requirement, lang).
+prop(chin107, credits, 3).
 
 prop(chin108, number, 108).
 prop(chin108, department, chin).
 prop(chin108, requirement, lang).
+prop(chin108, credits, 3).
 
 prop(chin233, number, 233).
 prop(chin233, department, chin).
 prop(chin233, requirement, lang).
+prop(chin233, credits, 3).
 
 prop(chin234, number, 234).
 prop(chin234, department, chin).
 prop(chin234, requirement, lang).
+prop(chin234, credits, 3).
 
 prop(dani210, number, 210).
 prop(dani210, department, dani).
 prop(dani210, requirement, lang).
+prop(dani210, credits, 3).
 
 prop(fnel202, number, 202).
 prop(fnel202, department, fnel).
 prop(fnel202, requirement, lang).
+prop(fnel202, credits, 3).
 
 prop(fnel212, number, 212).
 prop(fnel212, department, fnel).
 prop(fnel212, requirement, lang).
+prop(fnel212, credits, 3).
 
 prop(fnel222, number, 222).
 prop(fnel222, department, fnel).
 prop(fnel222, requirement, lang).
+prop(fnel222, credits, 3).
 
 prop(fnel232, number, 232).
 prop(fnel232, department, fnel).
 prop(fnel232, requirement, lang).
+prop(fnel232, credits, 3).
 
 prop(fnel242, number, 242).
 prop(fnel242, department, fnel).
 prop(fnel242, requirement, lang).
+prop(fnel242, credits, 3).
 
 prop(fnel252, number, 252).
 prop(fnel252, department, fnel).
 prop(fnel252, requirement, lang).
+prop(fnel252, credits, 3).
 
 prop(fnel262, number, 262).
 prop(fnel262, department, fnel).
 prop(fnel262, requirement, lang).
+prop(fnel262, credits, 3).
 
 prop(fnel292, number, 292).
 prop(fnel292, department, fnel).
 prop(fnel292, requirement, lang).
+prop(fnel292, credits, 3).
 
 prop(fren112, number, 112).
 prop(fren112, department, fren).
 prop(fren112, requirement, lang).
+prop(fren112, credits, 3).
 
 prop(germ210, number, 210).
 prop(germ210, department, germ).
 prop(germ210, requirement, lang).
+prop(germ210, credits, 3).
 
 prop(grek200, number, 200).
 prop(grek200, department, grek).
 prop(grek200, requirement, lang).
+prop(grek200, credits, 3).
 
 prop(grek202, number, 202).
 prop(grek202, department, grek).
 prop(grek202, requirement, lang).
+prop(grek202, credits, 3).
 
 prop(hebr405, number, 405).
 prop(hebr405, department, hebr).
 prop(hebr405, requirement, lang).
+prop(hebr405, credits, 3).
 
 prop(hebr202, number, 202).
 prop(hebr202, department, hebr).
 prop(hebr202, requirement, lang).
+prop(hebr202, credits, 3).
 
 prop(hinu200, number, 200).
 prop(hinu200, department, hinu).
 prop(hinu200, requirement, lang).
+prop(hinu200, credits, 3).
 
 prop(hinu202, number, 202).
 prop(hinu202, department, hinu).
 prop(hinu202, requirement, lang).
+prop(hinu202, credits, 3).
 
 prop(indo200, number, 200).
 prop(indo200, department, indo).
 prop(indo200, requirement, lang).
+prop(indo200, credits, 3).
 
 prop(indo202, number, 202).
 prop(indo202, department, indo).
 prop(indo202, requirement, lang).
+prop(into202, credits, 3).
 
 prop(ital202, number, 202).
 prop(ital202, department, ital).
 prop(ital202, requirement, lang).
+prop(ital202, credits, 3).
 
 prop(ital203, number, 203).
 prop(ital203, department, ital).
 prop(ital203, requirement, lang).
+prop(ital203, credits, 3).
 
 prop(ital206, number, 206).
 prop(ital206, department, ital).
 prop(ital206, requirement, lang).
+prop(ital206, credits, 3).
 
 prop(japn103, number, 103).
 prop(japn103, department, japn).
 prop(japn103, requirement, lang).
+prop(japn103, credits, 3).
 
 prop(japn151, number, 151).
 prop(japn151, department, japn).
 prop(japn151, requirement, lang).
+prop(japn151, credits, 3).
 
 prop(japn201, number, 201).
 prop(japn201, department, japn).
 prop(japn201, requirement, lang).
+prop(japn201, credits, 3).
 
 prop(japn260, number, 260).
 prop(japn260, department, japn).
 prop(japn260, requirement, lang).
+prop(japn260, credits, 3).
 
 prop(korn200, number, 200).
 prop(korn200, department, korn).
 prop(korn200, requirement, lang).
+prop(korn200, credits, 3).
 
 prop(korn202, number, 202).
 prop(korn202, department, korn).
 prop(korn202, requirement, lang).
+prop(korn202, credits, 3).
 
 prop(latn200, number, 200).
 prop(latn200, department, latn).
 prop(latn200, requirement, lang).
+prop(latn200, credits, 3).
 
 prop(latn202, number, 202).
 prop(latn202, department, latn).
 prop(latn202, requirement, lang).
+prop(latn202, credits, 3).
 
 prop(pers104, number, 104).
 prop(pers104, department, pers).
 prop(pers104, requirement, lang).
+prop(pers104, credits, 3).
 
 prop(pers201, number, 201).
 prop(pers201, department, pers).
 prop(pers201, requirement, lang).
+prop(pers201, credits, 3).
 
 prop(pols300, number, 300).
 prop(pols300, department, pols).
 prop(pols300, requirement, lang).
+prop(pols300, credits, 3).
 
 prop(port202, number, 202).
 prop(port202, department, port).
 prop(port202, requirement, lang).
+prop(port202, credits, 3).
 
 prop(port210, number, 210).
 prop(port210, department, port).
 prop(port210, requirement, lang).
+prop(port210, credits, 3).
 
 prop(punj200, number, 200).
 prop(punj200, department, punj).
 prop(punj200, requirement, lang).
+prop(punj200, credits, 3).
 
 prop(punj202, number, 202).
 prop(punj202, department, punj).
 prop(punj202, requirement, lang).
+prop(punj202, credits, 3).
 
 prop(russ200, number, 200).
 prop(russ200, department, russ).
 prop(russ200, requirement, lang).
+prop(russ200, credits, 3).
 
 prop(sans200, number, 200).
 prop(sans200, department, sans).
 prop(sans200, requirement, lang).
+prop(sans200, credits, 3).
 
 prop(sans202, number, 202).
 prop(sans202, department, sans).
 prop(sans202, requirement, lang).
+prop(sans202, credits, 3).
 
 prop(sans400, number, 400).
 prop(sans400, department, sans).
 prop(sans400, requirement, lang).
+prop(sans400, credits, 3).
 
 prop(sans401, number, 401).
 prop(sans401, department, sans).
 prop(sans401, requirement, lang).
+prop(sans401, credits, 3).
 
 prop(span112, number, 112).
 prop(span112, department, span).
 prop(span112, requirement, lang).
+prop(span112, credits, 3).
 
 prop(span202, number, 202).
 prop(span202, department, span).
 prop(span202, requirement, lang).
+prop(span202, credits, 3).
 
 prop(swed210, number, 210).
 prop(swed210, department, swed).
 prop(swed210, requirement, lang).
+prop(swed210, credits, 3).
 
 prop(ukrn225, number, 225).
 prop(ukrn225, department, ukrn).
 prop(ukrn225, requirement, lang).
-
-%% RESEARCH REQUIREMENTS
-
-prop(anth317, number, 317).
-prop(anth317, department, anth).
-prop(anth317, requirement, research).
-
-prop(anth407, number, 407).
-prop(anth407, department, anth).
-prop(anth407, requirement, research).
-
-prop(anth408, number, 408).
-prop(anth408, department, anth).
-prop(anth408, requirement, research).
-
-prop(anth417, number, 417).
-prop(anth417, department, anth).
-prop(anth417, requirement, research).
-
-prop(anth418, number, 418).
-prop(anth418, department, anth).
-prop(anth418, requirement, research).
-
-prop(anth428, number, 428).
-prop(anth428, department, anth).
-prop(anth428, requirement, research).
-
-prop(anth431, number, 431).
-prop(anth431, department, anth).
-prop(anth431, requirement, research).
-
-prop(anth449, number, 449).
-prop(anth449, department, anth).
-prop(anth449, requirement, research).
-
-prop(anth452, number, 452).
-prop(anth452, department, anth).
-prop(anth452, requirement, research).
-
-prop(anth478, number, 478).
-prop(anth478, department, anth).
-prop(anth478, requirement, research).
-
-prop(arcl306, number, 306).
-prop(arcl306, department, arcl).
-
-prop(arcl405, number, 405).
-prop(arcl405, department, arcl).
-
-prop(arcl406, number, 406).
-prop(arcl406, department, arcl).
-
-prop(arcl419, number, 419).
-prop(arcl419, department, arcl).
-
-prop(arth410, number, 410).
-prop(arth410, department, arth).
-
-prop(arth432, number, 432).
-prop(arth432, department, arth).
-
-prop(arth436, number, 436).
-prop(arth436, department, arth).
-
-prop(arth437, number, 437).
-prop(arth437, department, arth).
-
-prop(arth439, number, 439).
-prop(arth439, department, arth).
-
-prop(arth440, number, 440).
-prop(arth440, department, arth).
-
-prop(arth442, number, 442).
-prop(arth442, department, arth).
-
-prop(arth443, number, 443).
-prop(arth443, department, arth).
-
-prop(arth445, number, 445).
-prop(arth445, department, arth).
-
-prop(arth448, number, 448).
-prop(arth448, department, arth).
-
-prop(arth450, number, 450).
-prop(arth450, department, arth).
-
-prop(arth455, number, 455).
-prop(arth455, department, arth).
-
-prop(arth458, number, 458).
-prop(arth458, department, arth).
-
-prop(arth459, number, 459).
-prop(arth459, department, arth).
-
-prop(arth464, number, 464).
-prop(arth464, department, arth).
-
-prop(arth471, number, 471).
-prop(arth471, department, arth).
-
-prop(arth476, number, 476).
-prop(arth476, department, arth).
-
-prop(arth479, number, 479).
-prop(arth479, department, arth).
-
-prop(arth480, number, 480).
-prop(arth480, department, arth).
-
-prop(asia402, number, 402).
-prop(asia402, department, asia).
-
-prop(asia408, number, 408).
-prop(asia408, department, asia).
-
-prop(asia402, number, 402).
-prop(asia402, department, asia).
+prop(ukrn225, credits, 3).
 
 %% LITERATURE REQUIREMENTS
 
