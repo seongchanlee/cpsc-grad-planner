@@ -1,11 +1,6 @@
-
 graduated(Transcript) :-
     complete(Transcript, _, _).
 
-%% complete([cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc320, cpsc322, cpsc304, cpsc311, cpsc312, cpsc404, cpsc411, cpsc410], CS, _,_).
-%% exampleTranscript = [cpsc110, cpsc121, math100, math101, cpsc210, cpsc213, cpsc221, math200, stat200, cpsc310, cpsc313, cpsc319, cpsc320, cpsc311, cpsc319, cpsc322, cpsc340, cpsc410, cpsc424, cpsc422, wrds150, grek200, latn301, slav307, asia212, cens202, fren220, fhis333, germ426, hebr479, ital202, ital203, span112, ukrn225, phil375, pols345, hinu200, hinu202, rmst221, sans300, punj403]
-
-%% try complete([cpsc110, cpsc121, cpsc200, cpsc310, math100, math101, cpsc210, cpsc213, cpsc221, math200, math221], CS, _, _).
 complete(Transcript, CSDegreeRequirements, ArtsRequirements):-
     cs_requirements(Transcript, Result1),
     check_difference(Transcript, CSDegreeRequirements, Result1),
