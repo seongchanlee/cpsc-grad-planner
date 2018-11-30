@@ -137,15 +137,15 @@ q(Ans, Transcript) :-
 ask(Transcript, ['can', i, graduate], yes) :- graduated(Transcript).
 ask(Transcript, ['did', i, finish | T], yes) :-
   req_finish_sub_question(T, Transcript).
-ask(_, [what, is, average, for, Course], Ans) :-
+ask(_, ['what', is, average, for, Course], Ans) :-
   prop(Course, average, Ans).
-ask(_, [how, many, people, failed, Course], Ans) :-
+ask(_, ['how', many, people, failed, Course], Ans) :-
   prop(Course, fail, Ans).
-ask(_, [how, many, people, passed, Course], Ans) :-
+ask(_, ['how', many, people, passed, Course], Ans) :-
   prop(Course, pass, Ans).
-ask(_, [who, is, the, instructor, for, Course], Ans) :-
+ask(_, ['who', is, the, instructor, for, Course], Ans) :-
   prop(Course, instructor, Ans).
-ask(_, [what, are, the, courses, taught, by, Instructor], Ans) :-
+ask(_, ['what', are, the, courses, taught, by, Instructor], Ans) :-
   prop(Ans, instructor, Instructor).
 
 req_finish_sub_question([first, year, cs, requirements], Transcript) :-
