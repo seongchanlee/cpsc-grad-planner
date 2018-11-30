@@ -25,5 +25,9 @@ did i finish language requirements
 did i finish literature requirements
 did i finish research requirements
 did i finish writing requirements
+how many people failed *cpsc course*
+how many people passed *cpsc course*
+who is the instructor for *cpsc course*
+what are the courses taught by *last name of a cpsc prof*
 ```
 
