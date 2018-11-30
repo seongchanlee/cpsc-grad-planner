@@ -5,6 +5,8 @@ Program to determine if you are ready to graduate with a BA in computer science,
 
 Code influenced by 2017's project: https://github.com/blueish/cs-siesta-fiesta
 
+Data taken from: https://cs310.ugrad.cs.ubc.ca/ui/index.html
+
 ## Instruction
 ```
 q(Ans, *insert transcript here*)
